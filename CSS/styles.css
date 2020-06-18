@@ -1,0 +1,4892 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+/* Style the basic site elements - START */
+@media only screen and (max-width: 767px)
+{
+	/* Force all DIVs to be on their own line - START */
+	#mainBody div:not(.desktopSize):not(.tabletSize):not(#accordion):not(.ui-accordion-content):not(div#leagues):not(div#events) {
+		display: block !important;
+		width: 100% !important;
+		float: none !important;
+	}
+	/* Force all DIVs to be on their own line - END */
+
+	/* Force all images to be on their own line - START */
+	#mainBody img {
+		display: block !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+		float: none !important;
+		width: auto !important;
+		height: auto !important;
+	}
+	/* Force all images to be on their own line - END */
+
+	/* Change the header to remove the large logo - START */
+	body {
+		margin-top: 0px !important;
+	}
+	div#pageTop1 {
+		/* display: none; */
+	}
+	/* Change the header to remove the large logo - END */
+
+	/* Change the drop down menu that replaces the tabs - START */
+	form#menuDropdown {
+		margin: 30px 0 0 0;
+		display: block !important;
+		text-align: center !important;
+	}
+
+	p#menuDropdown,
+	form#menuDropdown + p {
+		display: none;
+	}
+
+	form#menuDropdown select[name="menu"] {
+		width: calc(100% - 120px);
+	}
+
+	form#menuDropdown input[type="button"] {
+		border: 1px solid #e0e0e2 !important;
+		background-color: #ffffff !important;
+		color: #585858 !important;
+	    border-radius: 3px;
+		padding: 12px 30px;
+		font-size: 14px !important;
+		line-height: 24px;
+		font-weight: 600;
+		letter-spacing: .06em;
+		text-transform: uppercase;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		cursor: pointer;
+	}
+
+	form#menuDropdown input[type="button"]:hover {
+		background-color: #3f6caf !important;
+		color: #ffffff !important;
+	}
+	/* Change the drop down menu that replaces the tabs - END */
+
+	/* Make sure not fields overflow the size of the screen - START */
+	input[type="text"], input[type="password"], input[type="search"], textarea, select, input[type="submit"], input[type="button"], input[type="reset"] {
+		max-width: 100%;
+	}
+	/* Make sure not fields overflow the size of the screen - END */
+}
+@media only screen and (min-width: 768px)
+{
+	/* Change basic layout - START */
+	div#mainBody {
+		padding: 0px;
+		background-color: #FFF;
+	}
+
+	body #bodyCenter {
+		margin-right: auto !important;
+		margin-left: auto !important;
+		max-width: 1330px;
+		margin-top: 0px !important;
+		margin-bottom: 0px !important;
+		padding: 0px !important;
+	}
+	/* Change basic layout - END */
+}
+/* Style the basic site elements - END */
+
+/* Add the logo if there is room - START */
+@media screen and (min-width: 768px) {
+	#pageTop1 #bannerContainer #bannerImage {
+		margin-top: -12px;
+		display: block;
+		float: left;
+		margin-right: 10px;
+	}
+
+	#pageTop1 #bannerContainer {
+		max-width: 1200px;
+		margin-left: auto;
+		margin-right: auto;
+		border: none;
+		padding-left: 0px;
+	}
+
+	#pageTop1 #bannerContainer a {
+		position: absolute;
+		display: block;
+		margin-top: -55px;
+		padding-left: 10px;
+		text-decoration: none;
+		color: #585858 !important;
+	}
+}
+@media screen and (max-width: 850px) and (min-width: 768px) {
+	ul#main-menu {
+		padding-left: 40px;
+	}
+}
+@media screen and (min-width: 1025px) {
+	#pageTop1 #bannerContainer a::after {
+		content: "Chicago CC";
+		display: block;
+		font-size: 24px;
+		font-family: 'Satisfy', cursive;
+		float: left;
+		height: auto;
+		width: auto;
+	}
+}
+@media screen and (min-width: 1130px) {
+	#pageTop1 #bannerContainer a::after {
+		content: "Chicago Curling Club";
+		display: block;
+		font-size: 24px;
+		font-family: 'Satisfy', cursive;
+		float: left;
+		height: auto;
+		width: auto;
+	}
+}
+@media screen and (max-width: 767px) {
+	#pageTop1 #bannerContainer #bannerImage {
+		display: none;
+	}
+
+	#pageTop1 #bannerContainer {
+		content: none;
+	}
+
+	#pageTop1 #bannerContainer a {
+		position: absolute;
+		display: block;
+		text-decoration: none;
+		color: #585858 !important;
+		left: 70px;
+		top: 18px;
+	}
+
+	#pageTop1 #bannerContainer a::after {
+		content: "Chicago CC";
+		display: block;
+		font-size: 22px;
+		float: left;
+		font-family: 'Satisfy', cursive;
+		height: auto;
+		width: auto;
+		padding-left: 0px;
+		padding-top: 5px;
+	}
+
+	.main-menu-btn {
+		margin-top: 15px;
+		margin-left: 15px;
+		margin-bottom: 15px;
+	}
+
+	.homePageHeader {
+		display: none;
+	}
+}
+/* Add the logo if there is room - END */
+
+/* Change the display of list items - START */
+li {
+	margin-bottom: 4px;
+}
+/* Change the display of list items - END */
+
+/* Change the layout of the footer - START */
+#pageBottom1 {
+	display: none;
+}
+
+#pageBottom2 {
+	color: #F0F0F0;
+	padding-top: 15px;
+	background-color: #585858;
+	text-transform: uppercase;
+	width: 100%;
+	border-bottom: none;
+	font-size: 12px !important;
+	float: none !important;
+	clear: none !important;
+	min-height: auto !important;
+}
+
+#pageBottom3 {
+	display: none;
+}
+
+#pageBottom3 + div,
+#pageBottom1 + a + div {
+	padding-top: 7px !important;
+	background-color: #585858 !important;
+	padding-bottom: 15px !important;
+	float: none !important;
+	font-size: 12px !important;
+	clear: none !important;
+	height: auto !important;
+	margin-top: -1px !important;
+}
+
+#pageBottom3 + div a,
+#pageBottom1 + a + div a {
+	font-weight: normal;
+	font-size: 12px;
+	color: #F0F0F0 !important;
+	background-color: #585858 !important;
+	text-transform: uppercase;
+}
+/* Change the layout of the footer - END */
+
+/* Change the basic layout - START */
+body {
+	font-family:'Open Sans', sans-serif !important;
+	font-size:14px;
+	font-weight:400;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+}
+
+#bodyCenter {
+	background-color: #FFFFFF;
+}
+/* Change the basic layout - END */
+
+/* Change the look of a button - START */
+input[type="submit"], input[type="button"], input[type="reset"] {
+	border: 1px solid #3f6caf;
+	background-color: #3f6caf !important;
+	color: #FFF !important;
+	border-radius: 3px;
+	padding: 12px 30px;
+	line-height: 24px;
+	font-weight: 600;
+	letter-spacing: .06em;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 14px !important;
+	cursor: pointer !important;
+	font-family: 'Open Sans', sans-serif !important;
+	white-space: normal;
+}
+
+input[type="submit"]:hover, input[type="button"]:hover, input[type="reset"]:hover {
+	background-color: #585858 !important;
+	color: #ffffff !important;
+}
+
+input[type="submit"]:focus, input[type="button"]:focus, input[type="reset"]:focus {
+	box-shadow: 0 0 5px #7B9FD9;
+	border: 1px solid #7B9FD9;
+}
+
+input[type="reset"] {
+	border: 1px solid #e0e0e2;
+	background-color: #ffffff !important;
+	color: #585858 !important;
+}
+
+input[type="reset"]:hover {
+	background-color: #3f6caf !important;
+	color: #ffffff !important;
+}
+
+/* Change the look of a button - END */
+
+/* Change the look of a textbox, textarea, selectboxes, and checkboxes - START */
+select {
+	padding: 18px;
+}
+
+input[type="text"], input[type="password"], input[type="search"], textarea {
+	padding: 15px;
+	font-size: 14px !important;
+	line-height: 24px;
+	border: 1px solid #ececee;
+	border-radius: 3px;
+	color: #495057;
+	background-color: #f8f8f8;
+	font-family: 'Open Sans', sans-serif !important;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="search"]:focus, textarea:focus,
+input[type="text"]:hover, input[type="password"]:hover, input[type="search"]:hover, textarea:hover,
+input[type="text"]:active, input[type="password"]:active, input[type="search"]:active, textarea:active {
+	background-color: #ffffff;
+	border: 1px solid #3f6caf !important;
+	outline: none;
+}
+
+select, input[type="checkbox"] {
+	border: 1px solid #ececee !important;
+	font-size: 14px !important;
+	color: #495057;
+	background-color: #f8f8f8;
+}
+
+select:focus, input[type="checkbox"]:focus,
+select:hover, input[type="checkbox"]:hover,
+select:active, input[type="checkbox"]:active {
+	background-color: #ffffff;
+	border: 1px solid #3f6caf !important;
+	outline: none;
+}
+
+/* Don't allow a readonly/disabled field to change color */
+input[type="text"]:read-only, input[type="password"]:read-only, input[type="search"]:read-only, textarea:read-only, select:disabled, input[type="checkbox"]:read-only {
+	background-color: #f8f8f8 !important;
+	border: 1px solid #ececee !important;
+}
+/* Change the look of a textbox, textarea, selectboxes, and checkboxes - END */
+
+/* Change the look of the Member Dashboard - START */
+body#memberPage div#bodyCenter > h1 + h2 {
+	text-align: center;
+	padding: 50px 30px 0px 30px;
+	font-size: 26px;
+	background-color: #585858;
+	margin: 0;
+	color: #fff;
+}
+
+body#memberPage div#bodyCenter > h1 + h2 + p {
+	text-align: center;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 50px;
+	padding-top: 15px;
+	background-color: #585858;
+	margin: 0;
+	color: #fff;
+	font-size: 16px;
+}
+
+body#memberPage div#bodyCenter > h1 + h2 + p + p {
+	display: none;
+}
+
+body#memberPage div#accordion {
+	padding: 10px 30px 30px 30px;
+}
+
+body#memberPage div#accordion h3 span {
+	background-image: none;
+	border: solid #3f6caf;
+	border-width: 0 1px 1px 0;
+	display: inline-block;
+	padding: 1px;
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	right: 13px !important;
+	margin-top: 0px;
+	width: 5px;
+	height: 5px;
+}
+
+body#memberPage div#accordion h3.ui-state-active span {
+	background-image: none;
+	border-width: 0 1px 1px 0;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	right: 11px !important;
+	margin-top: -6px;
+}
+
+body#memberPage div#accordion h3 {
+	text-align: left !important;
+	border-radius: 0 !important;
+	background: none !important;
+	border: none !important;
+	color: #686868 !important;
+	padding: 30px 30px 30px 20px;
+	outline: none !important;
+	font-size: 20px;
+	border-bottom: 1px solid #ececee !important;
+	color: #333 !important;
+	font-family: 'Open Sans', sans-serif !important;
+}
+
+body#memberPage div#accordion h3.ui-state-active {
+	border-bottom: none !important;
+}
+
+body#memberPage div#accordion div.ui-accordion-content {
+	border: none !important;
+	border-bottom: 1px solid #ececee !important;
+	padding: 0px 0px 30px 30px;
+}
+
+body#memberPage div#accordion div.ui-accordion-content p {
+	color: #888;
+	line-height: 1.8;
+	padding: 0;
+	margin: 0;
+	text-align: left !important;
+	font-family: 'Open Sans', sans-serif !important;
+}
+
+body#memberPage div#accordion .ui-accordion-content p + br {
+	display: none;
+}
+
+body#memberPage div#accordion table.scores,
+body#memberPage div#accordion table.gameTable,
+body#memberPage div#accordion table.eventTable,
+body#memberPage div#accordion table.emailTable {
+	width: 100%;
+	font-family: 'Open Sans', sans-serif !important;
+}
+
+body#memberPage div#accordion table.scores tr th,
+body#memberPage div#accordion table.gameTable tr th,
+body#memberPage div#accordion table.eventTable tr th,
+body#memberPage div#accordion table.emailTable tr th {
+	font-size: 18px;
+	color: #888;
+	padding: 15px;
+}
+
+body#memberPage div#accordion table.scores tr td,
+body#memberPage div#accordion table.gameTable tr td,
+body#memberPage div#accordion table.eventTable tr td,
+body#memberPage div#accordion table.emailTable tr td {
+	border-top: solid 1px #ececee;
+	border-left: solid 1px #ececee;
+	border-right: none;
+	margin: 0;
+	color: #888;
+}
+
+body#memberPage div#accordion table.scores tr td:last-of-type,
+body#memberPage div#accordion table.gameTable tr td:last-of-type,
+body#memberPage div#accordion table.eventTable tr td:last-of-type,
+body#memberPage div#accordion table.emailTable tr td:last-of-type {
+	border-right: solid 1px #ececee;
+}
+
+body#memberPage div#accordion table.scores tr:last-of-type td,
+body#memberPage div#accordion table.gameTable tr:last-of-type td,
+body#memberPage div#accordion table.eventTable tr:last-of-type td,
+body#memberPage div#accordion table.emailTable tr:last-of-type td {
+	border-bottom: solid 1px #ececee;
+}
+
+body#memberPage div#accordion table.scores tr:nth-child(odd),
+body#memberPage div#accordion table.gameTable tr:nth-child(odd),
+body#memberPage div#accordion table.eventTable tr:nth-child(odd),
+body#memberPage div#accordion table.emailTable tr:nth-child(odd) {
+    background-color: #fff !important;
+}
+
+body#memberPage div#accordion table.scores tr:nth-child(even),
+body#memberPage div#accordion table.gameTable tr:nth-child(even),
+body#memberPage div#accordion table.eventTable tr:nth-child(even),
+body#memberPage div#accordion table.emailTable tr:nth-child(even) {
+    background-color: #f8f8f8 !important;
+}
+
+body#memberPage div#accordion table.eventTable tr td:nth-last-child(1),
+body#memberPage div#accordion table.emailTable tr td:nth-last-child(1) {
+	text-align: center;
+}
+
+/* Only on larger screens */
+@media only screen and (min-width: 768px) {
+	body#memberPage div#accordion table.scores tr td,
+	body#memberPage div#accordion table.gameTable tr td,
+	body#memberPage div#accordion table.eventTable tr td,
+	body#memberPage div#accordion table.emailTable tr td {
+		padding: 10px;
+	}
+}
+/* Change the look of the Member Dashboard - END */
+
+/* Center the site when the screen is smaller than the minimum - START */
+@media only screen and (max-width: 959px)
+{
+
+	#mainBody {
+		width: 100%;
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+
+	#bodyCenter {
+		background-color: #FFFFFF;
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+	/* Center the site - END */
+}
+/* Center the site when the screen is smaller than the minimum - END */
+
+/* Set general site settings - START */
+@media only screen and (min-width: 768px) {
+	body {
+		margin: 0;
+		width: auto;
+		background-color: #eCF0F5;
+	}
+}
+/* Set general site settings - END */
+
+/* Change the navigation - START */
+@media only screen and (min-width: 768px) {
+	nav#main-nav {
+		background-color: #FFF;
+	}
+
+	div#topNav {
+		max-width: 1200px;
+		margin-left: auto;
+		margin-right: auto;
+		border: none;
+		padding-left: 0px;
+	}
+
+	.sm-simple {
+		-webkit-box-shadow: none;
+		box-shadow: none;
+	}
+
+	.sm-simple a span.sub-arrow {
+		border: solid #333;
+		border-width: 0 2px 2px 0;
+		display: inline-block;
+		padding: 3px;
+		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		right: 13px !important;
+		margin-top: -7px;
+		width: 5px;
+		height: 5px;
+	}
+
+	.sm-simple > li {
+		border: none;
+	}
+
+	.sm-simple ul a span.sub-arrow {
+		transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);
+		right: 10px !important;
+		border-color: #BBB;
+	}
+
+	div#topNav {
+		background-color: #FFF;
+		padding-top: 15px;
+	}
+
+	ul.sm-simple li a {
+		color: #333 !important;
+		display: block !important;
+		/* text-transform: uppercase; */
+		font-size: 14px !important;
+		/* letter-spacing: .05em !important; */
+		font-family: 'Open Sans', sans-serif !important;
+	}
+
+	ul.sm-simple li ul {
+		padding: 0px 20px 20px 20px !important;
+	}
+
+	ul.sm-simple li li a {
+		color: #888 !important;
+		padding: 12px 60px 12px 12px !important;
+		display: block !important;
+		text-transform: none !important;
+		font-size: 14px !important;
+		padding-right: 33px;
+	}
+
+	.sm-simple a:hover {
+		color: #af503f !important;
+	}
+
+	.sm-simple a:hover .sub-arrow {
+		border-color: #af503f !important;
+	}
+
+	#main-menu ul {
+		padding: 20px 20px 20px 20px !important;
+		min-width: 100% !important;
+		background-color: #fbfbfb !important;
+		box-shadow: none !important;
+		border: 1px solid #f3f3f3 !important;
+		margin-top: 20px !important;
+	}
+
+	#main-menu ul ul {
+		margin-top: -50px !important;
+		margin-left: calc(100% + 20px) !important;
+		margin-top: calc(0% - 55px) !important;
+	}
+
+	.sm-simple ul > li {
+		border-top: none;
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+
+	ul#main-menu {
+		float: right;
+		margin-bottom: 15px;
+	}
+
+	nav#main-nav {
+		background-color: #FFF;
+		border: 1px solid #f3f3f3 !important;
+		padding: 5px 20px 5px 20px;
+	}
+
+	nav#main-nav::after {
+		content: ".";
+		visibility: hidden;
+		display: block;
+		height: 0;
+		clear: both;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.main-menu-btn-icon, .main-menu-btn-icon::before, .main-menu-btn-icon::after {
+		background: #333;
+	}
+
+	div#topNav {
+		background-color: #FFF;
+		border: 1px solid #f3f3f3 !important;
+	}
+
+	ul.sm-simple {
+	    -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+
+	ul.sm-simple li a {
+		display: block !important;
+		/* text-transform: uppercase; */
+		color: #333 !important;
+		padding-left: 10px !important;
+		font-family: 'Open Sans', sans-serif !important;
+	}
+
+	ul.sm-simple li li a {
+		text-transform: none !important;
+		color: #999 !important;
+	}
+
+	ul.sm-simple > li {
+		border: none;
+	}
+
+	ul.sm-simple li a span.sub-arrow {
+		border: solid #333;
+		border-width: 0 2px 2px 0;
+		display: inline-block;
+		padding: 3px;
+		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		right: 13px !important;
+		margin-top: -5px;
+		width: 5px;
+		height: 5px;
+	}
+
+	ul.sm-simple li li a span.sub-arrow {
+		border: solid #999;
+		border-width: 0 2px 2px 0;
+		display: inline-block;
+		padding: 3px;
+		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		right: 13px !important;
+		margin-top: -5px;
+		width: 5px;
+		height: 5px;
+	}
+
+	.sm-simple a.highlighted span.sub-arrow {
+		transform: rotate(-135deg);
+		-webkit-transform: rotate(-135deg);
+	}
+
+	#main-menu ul {
+		background-color: #FFF;
+		margin: 0;
+		padding: 0;
+	}
+
+	#main-menu ul li {
+		padding-left: 10px;
+	}
+
+	.sm-simple ul > li {
+		border-top: none;
+	}
+
+	nav#main-nav {
+		background-color: #50729F;
+	}
+}
+/* Change the navigation - END */
+
+/* Create generic buttons for hyperlinks - START */
+/*
+a.actionButton, a.specialButton {
+	background-color: #F8F8F8;
+	border: 3px solid #585858;
+	text-align: center;
+	font-weight: bold;
+	color: #303030;
+	padding: 10px 20px;
+	border-radius: 3px;
+	text-decoration: none;
+	display: inline-block;
+}
+
+a.actionButton:hover {
+	background-color: #303030;
+	border-color: #303030;
+	color: #F8F8F8;
+}
+a.specialButton {
+	border: 3px solid #990000;
+	color: #990000;
+}
+
+a.specialButton:hover {
+	background-color: #990000;
+	border-color: #990000;
+	color: #F8F8F8;
+}
+*/
+/* Create generic buttons for hyperlinks - END */
+
+/* Style the contact us page - START */
+body#contactUsPage .contactUsMap {
+	margin-left: auto;
+	margin-right: auto;
+	width: calc(100% - 80px);
+	max-width: 1200px;
+	margin-bottom: 40px;
+}
+
+body#contactUsPage .contactUsMap iframe {
+	width: 100%;
+	height: 500px;
+	display: block;
+}
+
+@media only screen and (max-width: 767px)
+{
+	body#contactUsPage .contactUsMap {
+		width: calc(100% - 40px);
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	body#contactUsPage .contactUsMap iframe {
+		width: 100%;
+		height: 350px;
+	}
+}
+/* Style the contact us page - END */
+
+/* Change the H1, H2 & H3 tags - START */
+h1.redesign, h2.redesign, h3.redesign, h4.redesign, h5.redesign, h6.redesign {
+	font-weight: 100;
+	margin: 0;
+	padding: 0;
+	color: #151515;
+	background: none;
+	text-align: left;
+}
+
+h1.redesign {
+	padding: 0px !important;
+	background: none !important;
+	margin-bottom: 0px !important;
+	color: #151515 !important;
+	font-size: 56px;
+}
+
+h2.redesign {
+	font-size: 32px;
+}
+
+h3.redesign {
+	font-size: 28px;
+}
+
+h4.redesign {
+	font-size: 24px;
+}
+
+h5.redesign {
+	font-size: 20px;
+}
+
+h6.redesign {
+	font-size: 18px;
+}
+
+p.redesign {
+	color: #888;
+	line-height: 1.8;
+	font-size: 14px;
+	margin-bottom: 50px;
+}
+
+a.redesign {
+	border-radius: 3px;
+	padding: 12px 30px;
+	font-size: 12px;
+	line-height: 24px;
+	font-weight: 600;
+	letter-spacing: .06em;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+}
+
+a.redesign.button {
+	border: 1px solid #3f6caf;
+	background-color: #3f6caf !important;
+	color: #FFF !important;
+}
+
+a.redesign.button:hover {
+	background-color: #585858 !important;
+}
+
+a.redesign.buttonDark {
+	border: 1px solid #585858;
+	background-color: #585858 !important;
+	color: #FFF !important;
+}
+
+a.redesign.buttonDark:hover {
+	background-color: #3f6caf !important;
+}
+
+a.redesign.buttonLight {
+	border: 1px solid #e0e0e2;
+	background-color: #ffffff !important;
+	color: #585858 !important;
+}
+
+a.redesign.buttonLight:hover {
+	background-color: #3f6caf !important;
+	color: #ffffff !important;
+}
+
+a.redesign.buttonSimple {
+	border: none !important;
+	background-color: #ffffff !important;
+	color: #585858 !important;
+}
+
+a.redesign.buttonSimple:hover {
+	background-color: #ffffff !important;
+	color: #3f6caf !important;
+}
+
+a.redesign.buttonSimple::after {
+	content: ">";
+	padding-left: 10px;
+}
+
+body .rowElement {
+	padding: 50px 30px 50px 30px;
+}
+
+.rowElement.alignCenter {
+	text-align: center !important;
+}
+
+.rowElement.alignCenter * {
+	text-align: center !important;
+}
+
+.rowElement.alignCenter p {
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+}
+
+.rowElement.alignLeft {
+	text-align: left !important;
+}
+
+.rowElement.alignLeft * {
+	text-align: left !important;
+}
+
+.rowElement.colorOne {
+	background-color: #fff;
+}
+
+.rowElement.colorOne h3 {
+	color: #151515 !important;
+}
+
+.rowElement.colorOne * {
+	color: #888 !important;
+}
+
+.rowElement.colorThree {
+	background-color: #33AA93;
+}
+
+.rowElement.colorThree *,
+.rowElement.colorThree a {
+	color: #fff !important;
+}
+
+.rowElement.colorFour {
+	background-color: #585858;
+}
+
+.rowElement.colorFour *,
+.rowElement.colorFour a {
+	color: #ffffff !important;
+}
+
+.rowElement.colorTwo {
+	background-color: #3f6caf;
+}
+
+.rowElement.colorTwo *,
+.rowElement.colorTwo a {
+	color: #fff !important;
+}
+
+@media only screen and (max-width: 767px) {
+	.rowElement.alignCenter p {
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+	}
+}
+
+div.colorOne a.redesign,
+div.colorTwo a.redesign,
+div.colorThree a.redesign,
+div.colorFour a.redesign {
+	border: 1px solid #e0e0e2;
+	background-color: #ffffff !important;
+	color: #585858 !important;
+}
+
+div.colorOne a.redesign:hover,
+div.colorTwo a.redesign:hover,
+div.colorThree a.redesign:hover {
+	background-color: #585858 !important;
+	color: #ffffff !important;
+}
+
+div.colorFour a.redesign:hover {
+	background-color: #3f6caf !important;
+	color: #ffffff !important;
+}
+
+.rowElement.twoSections {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.rowElement.twoSections > div {
+	flex: 0 0 50%;
+	max-width: calc(50% - 40px);
+	min-width: 200px;
+	padding-right: 20px;
+}
+
+.rowElement.twoSections > div:last-of-type {
+	padding-right: 0px;
+}
+
+@media only screen and (max-width: 767px) {
+	.rowElement.twoSections > div {
+		flex: none;
+		padding: 30px 10px 0px 10px;
+		width: calc(100% - 20px);
+		max-width: calc(100% - 20px);
+	}
+
+	.rowElement.threeSections > div {
+		flex: none;
+		padding: 30px 10px 0px 10px;
+		width: calc(100% - 40px);
+		max-width: calc(100% - 40px);
+	}
+}
+
+.rowElement.threeSections {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.rowElement.threeSections > div {
+	flex: 0 0 33.3%;
+	max-width: calc(25% - 30px) !important;
+	min-width: 250px;
+	padding: 0 20px 0 20px;
+}
+
+input[type="text"].redesign,
+input[type="password"].redesign,
+input[type="search"].redesign {
+	padding: 15px;
+	font-size: 14px;
+	line-height: 24px;
+	color: #888;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	color: #495057;
+	background-color: #f8f8f8;
+	border-color: #ececee;
+}
+
+input[type="text"].redesign:focus,
+input[type="password"].redesign:focus,
+input[type="search"].redesign:focus {
+	background-color: #ffffff;
+	box-shadow: 0 0 3px #3f6caf !important;
+	border: 1px solid #3f6caf !important;
+}
+
+input[type="checkbox"].redesign {
+	width: 25px;
+	height: 25px;
+	outline: none;
+	cursor: pointer;
+	box-sizing: border-box;
+}
+
+
+h1 + hr {
+	display: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #686868;
+	margin-bottom: 0;
+	font-weight: 100;
+}
+
+body h1:first-child {
+	font-weight: 100;
+	margin: 0;
+	background: none;
+	padding: 20px;
+	color: #888;
+	background-color: #f8f8f8;
+	text-align: left;
+}
+
+body a {
+	color: #3f6caf !important;
+}
+
+@media only screen and (max-width: 767px) {
+	body h1:first-child {
+		text-align: center;
+	}
+
+    #bodyCenter > p {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #bodyCenter > ul {
+        padding-right: 10px;
+    }
+
+	body .rowElement {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.rowElement.alignLeft h3 {
+		margin: 0 !important;
+	}
+}
+/* Change the H1, H2 & H3 tags - END */
+
+/* Style the Calendar page - START */
+body#calendarMonthPage table.calendarPicker,
+body#calendarWeekPage table.calendarPicker,
+body#calendarDayPage table.calendarPicker {
+	padding: 30px 40px 30px 40px;
+	margin-left: auto;
+	margin-right: auto;
+	border: solid 1px #ececee;
+	margin-top: 50px;
+}
+
+/* Rework top section of the Day & Week view */
+body#calendarDayPage table.calendarPicker > tbody > tr:last-of-type > td[colspan="3"] > table {
+	margin-top: -120px;
+}
+
+body#calendarWeekPage table.calendarPicker > tbody > tr:last-of-type > td[colspan="5"] > form {
+	margin-top: -90px;
+}
+
+body#calendarDayPage h1.content,
+body#calendarWeekPage h1.content {
+	margin-top: 50px;
+	margin-bottom: 20px !important;
+	background-color: #f8f8f8;
+	padding: 20px 0px 20px 0px;
+}
+
+body#calendarDayPage table.calendarPicker,
+body#calendarWeekPage table.calendarPicker {
+	padding-top: 40px;
+}
+
+body#calendarWeekPage form[action*="calendarMonth.php"][name="form3"] {
+	width: 82px;
+	height: 22px;
+	overflow: hidden;
+	margin-top: -25px;
+}
+
+body#calendarWeekPage form[action*="calendarMonth.php"][name="form3"] input[name=submit] {
+	background: none !important;
+	border: none !important;
+	text-decoration: underline !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	color: #3f6caf !important;
+	border-radius: unset !important;
+	font-family: 'Open Sans', sans-serif !important;
+}
+
+body#calendarWeekPage form[action*="calendarMonth.php"][name="form3"] input[name=submit]:focus {
+	border: none !important;
+	box-shadow: none !important;
+}
+
+body#calendarDayPage form[action*="calendarDay.php"][name="form2"] input[name=submit],
+body#calendarWeekPage form[action*="calendarWeek.php"][name="form2"] input[name=submit] {
+	border: 1px solid #3f6caf;
+	background-color: #3f6caf !important;
+	color: #FFF !important;
+	border-radius: 3px;
+	padding: 12px 30px;
+	font-size: 12px;
+	line-height: 24px;
+	font-weight: 600;
+	letter-spacing: .06em;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+body#calendarDayPage form[action*="calendarDay.php"][name="form2"] input[name=submit]:hover,
+body#calendarWeekPage form[action*="calendarWeek.php"][name="form2"] input[name=submit]:hover {
+	background-color: #585858 !important;
+}
+
+body#calendarDayPage form[action*="calendarMonth.php"][name="form3"] input[name=submit] {
+	background: none !important;
+	border: none !important;
+	text-decoration: underline !important;
+	padding: 0 !important;
+	margin: 30px 0 0 0 !important;
+	color: #3f6caf !important;
+	border-radius: unset !important;
+	text-transform: initial !important;
+}
+
+body#calendarDayPage form[action*="calendarWeek.php"][name="form2"] input[name=submit] {
+	background: none !important;
+	border: none !important;
+	text-decoration: underline !important;
+	padding: 0 !important;
+	margin: 30px 0 0 0 !important;
+	color: #3f6caf !important;
+	border-radius: unset !important;
+	text-transform: initial !important;
+}
+
+body#calendarDayPage form[action*="calendarMonth.php"][name="form3"] input[name=submit],
+body#calendarDayPage form[action*="calendarWeek.php"][name="form2"] input[name=submit] {
+	border: none !important;
+	box-shadow: none !important;
+}
+
+body#calendarMonthPage form[action*="calendarMonth.php"][name="form2"] {
+	margin-top: 10px;
+}
+
+/* Month and Year Text */
+body#calendarMonthPage form[action*="calendarMonth.php"][name="form2"] #getMonth {
+    font-size: 28px !important;
+    font-weight: 100 !important;
+    padding: 5px 0px 5px 0px !important;
+    color: #585858 !important;
+    width: calc(100% - 65px) !important;
+    background-color: #fff !important;
+    border: none !important;
+}
+
+body#calendarMonthPage form[action*="calendarMonth.php"][name="form2"] #getMonth:focus,
+body#calendarMonthPage form[action*="calendarMonth.php"][name="form2"] #getMonth:hover,
+body#calendarDayPage form[action*="calendarWeek.php"][name="form2"] input[name=submit]:focus,
+body#calendarDayPage form[action*="calendarWeek.php"][name="form2"] input[name=submit]:hover,
+body#calendarDayPage form[action*="calendarMonth.php"][name="form3"] input[name=submit]:focus,
+body#calendarDayPage form[action*="calendarMonth.php"][name="form3"] input[name=submit]:hover,
+body#calendarWeekPage form[action*="calendarMonth.php"][name="form3"] input[name=submit]:focus,
+body#calendarWeekPage form[action*="calendarMonth.php"][name="form3"] input[name=submit]:hover {
+	border: none !important;
+	box-shadow: none !important;
+}
+
+body#calendarMonthPage table.calendarPicker > tbody > tr:first-child > td:nth-of-type(3) {
+	vertical-align: top;
+}
+
+/* Previous Month Button */
+body#calendarDayPage .calendarArrowsLeft,
+body#calendarWeekPage .calendarArrowsLeft,
+body#calendarMonthPage .calendarArrowsLeft {
+	background: url(/jQueryAssets/images/controls.png) 0 -32px no-repeat !important;
+	border: none !important;
+	height: 33px !important;
+	width: 34px !important;
+	cursor: pointer !important;
+	padding: 4px !important;
+	border-radius: unset !important;
+	margin-top: 10px !important;
+	margin-right: 20px !important;
+}
+
+/* Next Month Button */
+body#calendarDayPage .calendarArrowsRight,
+body#calendarWeekPage .calendarArrowsRight,
+body#calendarMonthPage .calendarArrowsRight {
+	background: url(/jQueryAssets/images/controls.png) -43px -32px no-repeat !important;
+    border: none !important;;
+    height: 33px !important;;
+    width: 34px !important;;
+    cursor: pointer !important;;
+    padding: 4px !important;;
+    border-radius: unset !important;
+    margin-top: 10px !important;
+    margin-left: 20px !important;
+}
+
+body#calendarWeekPage .calendarArrowsLeft,
+body#calendarWeekPage .calendarArrowsRight {
+	margin-top: 150px;
+}
+
+body#calendarDayPage .calendarArrowsLeft,
+body#calendarDayPage .calendarArrowsRight {
+	margin-top: 150px;
+}
+
+/* Date Input Field */
+body#calendarMonthPage form[action*="calendarDay.php"] input#fullDate {
+	margin-right: 10px;
+}
+
+body#calendarWeekPage form[action*="calendarWeek.php"] input#fullDate,
+body#calendarDayPage form[action*="calendarDay.php"] input#fullDate {
+	padding: 12px;
+	font-size: 14px;
+	line-height: 24px;
+	color: #888;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	color: #495057;
+	background-color: #f8f8f8;
+	border-color: #ececee;
+	margin-right: 10px;
+	width: 200px;
+}
+
+body#calendarWeekPage form[action*="calendarWeek.php"] input#fullDate:focus,
+body#calendarDayPage form[action*="calendarDay.php"] input#fullDate:focus {
+	background-color: #ffffff !important;
+	box-shadow: 0 0 3px #3f6caf !important;
+	border: 1px solid #3f6caf !important;
+}
+
+body#calendarMonthPage table.calendar {
+	margin-top: 30px;
+}
+
+body#calendarMonthPage table.calendar + br,
+body#calendarWeekPage table.calendar + br,
+body#calendarDayPage table.calendar + br {
+	display: none;
+}
+
+/* Calendar Table */
+body#calendarMonthPage table.calendar,
+body#calendarWeekPage table.calendar,
+body#calendarDayPage table.calendar {
+	padding: 10px 40px 0 40px;
+	border-spacing: 0;
+	margin-bottom: 50px;
+}
+
+body#calendarMonthPage table.calendar tr td:last-of-type,
+body#calendarWeekPage table.calendar tr td:last-of-type,
+body#calendarDayPage table.calendar tr td:last-of-type {
+	border-right: solid 1px #ececee;
+}
+
+body#calendarMonthPage table.calendar tr:last-of-type td,
+body#calendarWeekPage table.calendar tr:last-of-type td,
+body#calendarDayPage table.calendar tr:last-of-type td {
+	border-bottom: solid 1px #ececee;
+}
+
+/* Calendar Header Row */
+body#calendarMonthPage table.calendar th,
+body#calendarWeekPage table.calendar th,
+body#calendarDayPage table.calendar th {
+	background-color: #fff;
+	border: none;
+	margin: 0;
+	padding: 15px;
+	font-size: 18px;
+	color: #888;
+}
+
+/* Calendar Row Cells */
+body#calendarMonthPage table.calendar td,
+body#calendarWeekPage table.calendar td,
+body#calendarDayPage table.calendar td {
+	background: none;
+	border: none;
+	color: #888;
+	font-size: 18px;
+	margin: 0;
+	padding: 10px;
+	height: 85px;
+	width: 85px;
+	background-image: linear-gradient(top, #f8f8f8, #f8f8f8 40px, transparent 40px, transparent 100%);
+	background-image: -webkit-linear-gradient(top, #f8f8f8, #f8f8f8 40px, transparent 40px, transparent 100%);
+	border-top: solid 1px #ececee;
+	border-left: solid 1px #ececee;
+	word-breaK: break-word;
+}
+
+body#calendarDayPage table.calendar td {
+	height: auto;
+	width: auto;
+	background: none;
+}
+
+body#calendarDayPage table.calendar > tbody > tr:nth-child(odd) {
+	background-color: #f8f8f8;
+}
+
+@media only screen and (min-width: 480px) {
+	body#calendarMonthPage table.calendar td div,
+	body#calendarWeekPage table.calendar td div {
+		font-size: 14px;
+		padding: 5px;
+		margin: 5px -5px -5px -5px;
+	}
+
+	body#calendarMonthPage table.calendar > tbody > tr > td > div > br,
+	body#calendarWeekPage table.calendar > tbody > tr > td > div > br {
+		display: none;
+	}
+
+	body#calendarMonthPage table.calendar th div.desktopSize,
+	body#calendarWeekPage table.calendar th div.desktopSize {
+		display: none;
+	}
+
+	body#calendarMonthPage table.calendar th div.tabletSize,
+	body#calendarWeekPage table.calendar th div.tabletSize {
+		display: block;
+		font-weight: 100;
+		text-transform: uppercase;
+	}
+}
+
+@media only screen and (max-width: 479px) {
+	body#calendarMonthPage form[action*="calendarMonth.php"][name="form2"] #getMonth {
+		/* font-size: 20px !important; */
+		width: 100% !important;
+		padding-bottom: 10px !important;
+	}
+
+	body#calendarWeekPage table.calendarPicker > tbody > tr:last-of-type > td[colspan="5"] > form {
+		margin-top: -150px;
+	}
+
+	body#calendarDayPage table.calendarPicker > tbody > tr:last-of-type > td[colspan="3"] > table {
+		margin-top: -180px;
+	}
+
+	body#calendarDayPage h1.content {
+		margin-top: 0px;
+	}
+
+	body#calendarWeekPage h1.content {
+		margin-top: 0px;
+		margin-bottom: 30px !important;
+	}
+
+	body#calendarMonthPage form[action*="calendarMonth.php"][name="form2"] img.icon {
+		/* display: inline !important; */
+	}
+
+	body#calendarMonthPage table.calendar,
+	body#calendarWeekPage table.calendar,
+	body#calendarDayPage table.calendar {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	body#calendarMonthPage table.calendarPicker,
+	body#calendarWeekPage table.calendarPicker,
+	body#calendarDayPage table.calendarPicker {
+		padding-left: 0px;
+		padding-right: 0px;
+		margin-right: 5px;
+		margin-left: 5px;
+	}
+
+	body#calendarMonthPage table.calendar td,
+	body#calendarWeekPage table.calendar td {
+		text-align: center;
+	}
+
+	body#calendarWeekPage form[action*="calendarWeek.php"] input#fullDate,
+	body#calendarDayPage form[action*="calendarDay.php"] input#fullDate {
+		margin-bottom: 10px;
+		width: calc(100% - 40px);
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	body#calendarDayPage form[action*="calendarDay.php"][name="form2"] input[name=submit],
+	body#calendarWeekPage form[action*="calendarWeek.php"][name="form2"] input[name=submit] {
+		width: calc(100% - 11px);
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	body#calendarDayPage .calendarArrowsLeft,
+	body#calendarWeekPage .calendarArrowsLeft,
+	body#calendarMonthPage .calendarArrowsLeft {
+		margin-left: 5px !important;
+		margin-top: 10px !important;
+	}
+
+	body#calendarDayPage .calendarArrowsRight,
+	body#calendarWeekPage .calendarArrowsRight,
+	body#calendarMonthPage .calendarArrowsRight {
+		margin-right: 5px !important;
+		margin-top: 10px !important;
+	}
+
+	body#calendarMonthPage table.calendar {
+		margin-top: 50px;
+	}
+}
+
+body#calendarDayPage table.calendarPicker,
+body#calendarWeekPage table.calendarPicker {
+	margin-bottom: 40px;
+	padding-top: 60px;
+}
+
+body#calendarDayPage table.calendarPicker td,
+body#calendarWeekPage table.calendarPicker td {
+	vertical-align: top;
+}
+
+/* This is the processing window that is dynamically displayed */
+body#calendarMonthPage div#MonthPicker_getMonth + div + div {
+	background-color: #fff !important;
+	padding: 30px 30px 30px 30px !important;
+	border: solid 1px #ccc !important;
+	color: #888 !important;
+}
+/* Style the Calendar page - END */
+
+/* Style the Member Directory page - START */
+body#directoryPage > div#mainBody > div#bodyCenter > h1 + p {
+	margin-top: 50px;
+	font-size: 16px;
+	margin-bottom: 0px;
+	line-height: 1.8;
+}
+
+body#directoryPage > div#mainBody > div#bodyCenter > h1 + p + div {
+	margin-bottom: 50px;
+	margin-top: 10px;
+	width: calc(100% - 120px);
+	padding: 30px 30px 30px 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+body#directoryPage #mainBody h1 + p a:nth-child(27) {
+    margin-right: 20px;
+}
+
+body#directoryPage select[name="dirTable_length"] {
+	padding: 8px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+body#directoryPage div#dirTable_filter input[type="search"] {
+    padding: 5px;
+    margin-left: 15px;
+    width: 275px;
+}
+
+@media only screen and (max-width: 767px) {
+	body#directoryPage > div#mainBody > div#bodyCenter > h1 + p {
+		margin-left: 10px;
+		margin-right: 10px;
+		font-size: 20px;
+		margin-top: 30px;
+	}
+
+	body#directoryPage > div#mainBody > div#bodyCenter > h1 + p + div {
+		width: calc(100% - 20px);
+		padding: 30px 10px 0px 10px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	body#directoryPage div#dirTable_wrapper div.dataTables_length {
+		margin-bottom: 20px;
+	}
+}
+/* Style the Member Directory page - END */
+
+/* Style the Username Availability Page - START */
+body#check4UserNamePage form[action="check4UserName.php"] > h1 + table {
+	padding: 50px 30px 20px 30px;
+}
+
+body#check4UserNamePage form[action="check4UserName.php"] + input[name="close"] {
+	margin: 50px 30px 50px 30px;
+}
+/* Style the Username Availability Page - END */
+
+/* Style the Modify Your Profile page - START */
+
+/* Main edit form */
+body#profile1Page > div#mainBody > div#bodyCenter > form[action^="profile"],
+body#profile2Page > div#mainBody > div#bodyCenter > form[action^="profile"],
+body#profile3Page > div#mainBody > div#bodyCenter > form[action^="profile"],
+body#profile4Page > div#mainBody > div#bodyCenter > form[action^="profile"] {
+	padding: 50px 50px 50px 50px;
+}
+body#profile2Page > div#mainBody > div#bodyCenter > form[action^="profile"],
+body#profile3Page > div#mainBody > div#bodyCenter > form[action^="profile"],
+body#profile4Page > div#mainBody > div#bodyCenter > form[action^="profile"] {
+	padding-top: 0px;
+}
+
+/* Ramdon break tags on the page */
+body#profile1Page > div#mainBody > div#bodyCenter > br,
+body#profile2Page > div#mainBody > div#bodyCenter > br,
+body#profile3Page > div#mainBody > div#bodyCenter > br,
+body#profile4Page > div#mainBody > div#bodyCenter > br {
+	display: none;
+}
+
+/* Membership Information - Extra table on the membership info page at the top */
+body#profile2Page > div#mainBody > div#bodyCenter > h1 + table + div + br + br + table {
+	padding: 50px 50px 0 50px;
+}
+
+/* Contact Info Table Cells */
+body#profile1Page form[action^="profile1.php"] table.profile tr td {
+	width: auto !important;
+}
+
+/* Other - Member Name Area */
+body#profile4Page #bodyCenter h1 + table#menuTabs + div + br + br + table#formTable {
+	width: auto;
+	padding: 50px 50px 20px 50px;
+}
+
+/* Other & Spare Tabs - Member Name Label */
+body#profile4Page #bodyCenter h1 + table#menuTabs + div + br + br + table#formTable tr td:nth-of-type(1)::after,
+body#profile3Page #bodyCenter h1 + table#menuTabs + div + br + br + table.profile tr td:nth-of-type(1)::after,
+body#profile2Page #bodyCenter h1 + table#menuTabs + div + br + br + table tr td:nth-of-type(1)::after {
+	content: ":";
+	font-weight: bold;
+	padding-right: 5px;
+}
+
+/* Other - Products and Service Textara */
+body#profile4Page form[action^="profile4.php"] table#formTable {
+	border-collapse: collapse;
+}
+
+/* Other - Products and Service Row */
+body#profile14Page form[action^="profile4.php"] table#formTable tr:nth-of-type(1) td {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+/* Other - Save Changes Button Area */
+body#profile4Page form[action^="profile4.php"] table#formTable tr td textarea#memberProductService {
+	margin-top: 10px;
+}
+
+/* Other - Save Change Button Row */
+body#profile4Page form[action^="profile4.php"] > table#formTable > tbody > tr:nth-of-type(2) > td {
+	text-align: left;
+	padding-top: 20px;
+}
+
+/* Spare Details Main Form Area */
+body#profile3Page form[action^="profile3.php"] table.profile {
+	border-collapse: collapse;
+}
+
+body#profile3Page form[action^="profile3.php"] > table.profile > tbody > tr:nth-of-type(1) > td:nth-of-type(1) > strong:nth-of-type(1) {
+	margin-right: 10px;
+}
+
+/* Spare Details - Main Textarea */
+body#profile3Page form[action^="profile3.php"] table.profile textarea[name="spareDetail"] {
+	margin-top: 10px;
+}
+
+/* Spare Details - Member Name Area */
+body#profile3Page #bodyCenter h1 + table#menuTabs + div + br + br + table.profile {
+	padding: 50px 50px 0px 50px;
+}
+
+/* Spare Details - "Can Spare As" Label */
+body#profile3Page form[action^="profile3.php"] > table.profile tr:nth-of-type(3) td strong {
+	display: block;
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+
+/* Spare Details - "Leagues I Can Spare In" label */
+body#profile3Page form[action^="profile3.php"] > table.profile tr:nth-of-type(4) td table.profile h2 {
+	background-color: #FFF;
+	color: #000;
+	font-weight: bold;
+	font-size: 14px;
+	margin: 20px 0 0 0;
+	padding: 0;
+}
+body#profile3Page form[action^="profile3.php"] > table.profile tr:nth-of-type(4) td table.profile h2::after {
+	content: ":";
+	font-weight: bold;
+}
+
+/* Configure the Changes Saved Dynamically Created Area */
+body#profile1Page div.ui-widget,
+body#profile2Page div.ui-widget,
+body#profile3Page div.ui-widget,
+body#profile4Page div.ui-widget {
+	font-family: 'Open Sans', sans-serif !important;
+    font-size: 14px;
+    padding: 0px 0px 20px 0px;
+}
+body#profile1Page div.ui-widget div.ui-state-highlight.ui-corner-all,
+body#profile2Page div.ui-widget div.ui-state-highlight.ui-corner-all,
+body#profile3Page div.ui-widget div.ui-state-highlight.ui-corner-all,
+body#profile4Page div.ui-widget div.ui-state-highlight.ui-corner-all {
+	background: none;
+	background-color: #fbfde8;
+	border: solid 1px #888;
+	padding: 10px 25px 10px 25px !important;
+}
+body#profile3Page div.ui-widget {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+/* Membership Information - Registration Details Footer */
+body#profile2Page > div#mainBody > div#bodyCenter > p:nth-last-of-type(2) {
+	padding: 0px 50px 50px 50px;
+	background-color: #af503f;
+	color: #fff;
+	text-align: left;
+	margin: 0;
+}
+
+/* Membership Information - Registration Details Table */
+body#profile2Page form[action^="profile2.php"] + hr + table.profile {
+	background-color: #af503f;
+	color: #fff;
+	width: 100%;
+	padding: 50px 50px 00px 50px;
+}
+
+/* Membership Information - Note at the bottom */
+body#profile2Page > div#mainBody > div#bodyCenter > p:last-of-type {
+	padding: 50px 50px 50px 50px;
+	background-color: #585858;
+	color: #fff;
+	margin: 0;
+}
+
+/* Membership Information - Registration Details */
+body#profile2Page form[action^="profile2.php"] + hr + table + h3 {
+	text-align: center;
+	padding: 0px 0px 20px 0px;
+	font-size: 20px;
+}
+
+/* Membership Information - Line Below Save Changes Button */
+body#profile2Page form[action^="profile2.php"] + hr {
+	display: none;
+}
+
+/* Member Info - Receipt Area Container */
+body#profile2Page form[action^="profile2.php"] + hr + table {
+	padding: 0px 50px 0px 50px;
+}
+
+/* Membership Info - Receipt Area */
+body#profile2Page form[action^="profile2.php"] + hr + table form[action="printReg.php"] {
+	text-align: center;
+}
+
+/* Membership Information - Registration Details Table Cells */
+body#profile2Page form[action^="profile2.php"] + hr + table > tbody > tr:nth-of-type(1) td {
+	margin-bottom: 20px;
+	display: block;
+	text-align: left;
+}
+
+/* Membership Info - Print Registration Button */
+body#profile2Page table form[action="printReg.php"] input[type="submit"][name="submit"] {
+	display: block;
+	margin-top: 10px;
+	word-wrap: break-word;
+}
+
+/* Membership Information - Notes to Convenor */
+body#profile2Page form[action^="profile2.php"] + hr + table + p {
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	margin-bottom: -15px;
+}
+
+/* Membership Information - Notes to Convenor Section After */
+body#profile2Page form[action^="profile2.php"] + hr + table + p + br {
+	display: none;
+}
+
+/* Membership Information - Table of Receipt */
+body#profile2Page form[action^="profile2.php"] + hr + table + h3 + table.register {
+	padding: 0px 50px 50px 50px;
+}
+
+
+@media only screen and (max-width: 767px) {
+	/* Main edit form */
+	body#profile1Page > div#mainBody > div#bodyCenter > form[action^="profile"],
+	body#profile2Page > div#mainBody > div#bodyCenter > form[action^="profile"],
+	body#profile3Page > div#mainBody > div#bodyCenter > form[action^="profile"],
+	body#profile4Page > div#mainBody > div#bodyCenter > form[action^="profile"] {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	/* Edit Profile Rows */
+	body#profile1Page table.profile td:nth-of-type(2),
+	body#profile2Page table.profile td:nth-of-type(2),
+	body#profile3Page table.profile td:nth-of-type(2),
+	body#profile4Page table.profile td:nth-of-type(2) {
+		margin-bottom: 20px;
+	}
+
+	/* Contact Information - Address Line 1 */
+	body#profile1Page form[action^="profile1.php"] table.profile tr:nth-of-type(4) td:nth-of-type(2) {
+		margin-bottom: 0px;
+	}
+
+	/* Contact Information - Space Below Country */
+	body#profile1Page form[action^="profile1.php"] table.profile tr:nth-of-type(10) td {
+		display: none;
+	}
+
+	/* Contact Information - Space Below Fax Phone */
+	body#profile1Page form[action^="profile1.php"] table.profile tr:nth-of-type(16) td {
+		display: none;
+	}
+
+	/* Contact Information - Space Below Enter Email Again */
+	body#profile1Page form[action^="profile1.php"] table.profile tr:nth-of-type(19) td {
+		display: none;
+	}
+
+	/* Contact Information - Gender Dropdown */
+	body#profile1Page form[action^="profile1.php"] table.profile tr:nth-of-type(20) select {
+		width: 97%;
+	}
+
+	/* Contact Information - Space Below Gender */
+	body#profile1Page form[action^="profile1.php"] table.profile tr:nth-of-type(21) td {
+		display: none;
+	}
+
+	/* Contact Information - Space Below Emergency Contact Phone Number */
+	body#profile1Page form[action^="profile1.php"] table.profile tr:nth-of-type(24) td {
+		display: none;
+	}
+
+	/* Contact Information - Date of Birth - Month */
+	body#profile1Page form[action^="profile1.php"] table.profile tr:nth-of-type(25) select:nth-of-type(1) {
+		width: 40%;
+	}
+
+	/* Contact Information - Date of Birth - Day */
+	body#profile1Page form[action^="profile1.php"] table.profile tr:nth-of-type(25) select:nth-of-type(2) {
+		width: 25%;
+	}
+
+	/* Contact Information - Date of Birth - Year */
+	body#profile1Page form[action^="profile1.php"] table.profile tr:nth-of-type(25) select:nth-of-type(3) {
+		width: 30%;
+	}
+
+	/* Contact Information - Save Changes Button */
+	body#profile1Page form[action^="profile1.php"] table.profile tr:nth-of-type(26) input {
+		width: 100%;
+		margin-top: 30px;
+	}
+
+	/* Other - Member Name Area */
+	body#profile4Page #bodyCenter h1 + table#menuTabs + div + br + br + table#formTable {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	/* Other - Save Changes Button Area */
+	body#profile4Page form[action^="profile4.php"] table#formTable tr td textarea#memberProductService {
+		width: calc(100% - 35px);
+	}
+
+	/* Membership Information - Extra table on the membership info page at the top */
+	body#profile2Page > div#mainBody > div#bodyCenter > h1 + table + div + br + br + table {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	/* Membership Information - Registration Details Footer */
+	body#profile2Page > div#mainBody > div#bodyCenter > p:nth-last-of-type(2) {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	/* Membership Information - Registration Details Table */
+	body#profile2Page form[action^="profile2.php"] + hr + table.profile {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	/* Membership Information - Note at the bottom */
+	body#profile2Page > div#mainBody > div#bodyCenter > p:last-of-type {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	/* Membership Information - Table */
+	body#profile2Page form[action^="profile2.php"] table.profile {
+		margin-top: 20px;
+	}
+
+	/* Membership Information - Username */
+	body#profile2Page form[action^="profile2.php"] table.profile tr:nth-of-type(1) input[type="text"] {
+		width: 90%;
+		margin-bottom: 5px;
+	}
+
+	/* Membership Information - Username Button */
+	body#profile2Page form[action^="profile2.php"] table.profile tr:nth-of-type(1) input[type="button"] {
+		width: calc(100% - 2px);
+	}
+
+	/* Membership Information - Password Container */
+	body#profile2Page form[action^="profile2.php"] table.profile tr:nth-of-type(2) td:nth-of-type(2) div:nth-of-type(1) {
+		display: block !important;
+		width: 90%;
+	}
+
+	/* Membership Information - Password Container - Strength */
+	body#profile2Page form[action^="profile2.php"] table.profile tr:nth-of-type(2) td:nth-of-type(2) div div:nth-of-type(1) {
+		display: inline-block !important;
+		width: auto !important;
+	}
+
+	/* Membership Information - Enter Password Again */
+	body#profile2Page form[action^="profile2.php"] table.profile tr:nth-of-type(3) input[type="password"] {
+		width: 90%;
+	}
+
+	/* Membership Information - Space Below the Enter Password Again area */
+	body#profile2Page form[action^="profile2.php"] table.profile tr:nth-of-type(4) {
+		display: none;
+	}
+
+	/* Membership Information - Password */
+	body#profile2Page form[action^="profile2.php"] table.profile tr:nth-of-type(2) input[type="password"] {
+		width: 100%;
+	}
+
+	/* Membership Information - Area Below Security Roles */
+	body#profile2Page form[action^="profile2.php"] table.profile tr:nth-of-type(10){
+		display: none;
+	}
+
+	/* Membership Information - Member Since */
+	body#profile2Page form[action^="profile2.php"] table.profile tr:nth-of-type(11) select {
+		width: calc(100% - 5px);
+	}
+
+	/* Membership Information - Years Curling Experience */
+	body#profile2Page form[action^="profile2.php"] table.profile tr:nth-of-type(12) input[type="text"] {
+		width: 90%;
+	}
+
+	/* Membership Information - Area Below Years Curling Experience */
+	body#profile2Page form[action^="profile2.php"] table.profile tr:nth-of-type(13) {
+		display: none;
+	}
+
+	/* Membership Information - Area Below Years Curling Experience */
+	body#profile2Page form[action^="profile2.php"] table.profile tr:nth-of-type(16) input[type="submit"] {
+		width: calc(100% - 10px);
+	}
+
+	/* Membership Information - Line Below Save Changes Button */
+	body#profile2Page form[action^="profile2.php"] + hr {
+		margin-top: 40px;
+		margin-bottom: 20px;
+		width: 100%;
+	}
+
+	/* Membership Information - Registration Details */
+	body#profile2Page form[action^="profile2.php"] + hr + table.profile h3 {
+		width: calc(100% - 20px);
+	}
+
+	/* Membership Information - Send Email and Button Area */
+	body#profile2Page form[action^="profile2.php"] + hr + table.profile td:nth-of-type(2) {
+		margin-bottom: 0px;
+	}
+
+	/* Membership Information - Print Registration */
+	body#profile2Page form[action^="printReg.php"] input[type="submit"] {
+		display: block;
+		width: 100%;
+		margin-top: 20px;
+	}
+
+	/* Spare Details - Member Name Area */
+	body#profile3Page #bodyCenter h1 + table#menuTabs + div + br + br + table.profile {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	/* Spare Details - Include Name in Spare List - Bold */
+	body#profile3Page form[action^="profile3.php"] table.profile tr:nth-of-type(1) td strong {
+		font-weight: normal;
+	}
+
+	/* Spare Details - Include Name in Spare List - Checkbox */
+	body#profile3Page form[action^="profile3.php"] table.profile tr:nth-of-type(1) td input {
+		float: left;
+		margin-right: 5px;
+	}
+
+	/* Spare Details - Main Textarea */
+	body#profile3Page form[action^="profile3.php"] table.profile textarea[name="spareDetail"] {
+		width: calc(100% - 35px);
+	}
+
+	/* Spare Details - "Can spare as" area */
+	body#profile3Page form[action^="profile3.php"] table.profile tr:nth-of-type(3) td {
+		margin-bottom: 20px;
+		margin-top: 20p;
+	}
+
+	/* Spare Details - "Can spare as" checkboxes */
+	body#profile3Page form[action^="profile3.php"] table.profile tr:nth-of-type(3) td input:nth-of-type(2),
+	body#profile3Page form[action^="profile3.php"] table.profile tr:nth-of-type(3) td input:nth-of-type(3),
+	body#profile3Page form[action^="profile3.php"] table.profile tr:nth-of-type(3) td input:nth-of-type(4) {
+		margin-left: 20px;
+	}
+
+	/* Spare Details - "Leagues I Can Spare In" Area Rows */
+	body#profile3Page form[action^="profile3.php"] table.profile tr:nth-of-type(4) td table.profile td {
+		padding-bottom: 10px;
+	}
+
+	/* Spare Details - "Save Changes" button */
+	body#profile3Page form[action^="profile3.php"] table.profile tr:nth-of-type(5) td input[type="submit"] {
+		margin-top: 20px;
+		width: 100%;
+	}
+
+	/* Spare Details - "Leagues I Can Spare In" checkbox rows */
+	body#profile3Page form[action^="profile3.php"] table.profile table.profile td:nth-of-type(2),
+	body#profile3Page form[action^="profile3.php"] table.profile table.profile tr:nth-of-type(2) td,
+	body#profile3Page form[action^="profile3.php"] table.profile table.profile tr:nth-of-type(3) td,
+	body#profile3Page form[action^="profile3.php"] table.profile table.profile tr:nth-of-type(4) td,
+	body#profile3Page form[action^="profile3.php"] table.profile table.profile tr:nth-of-type(5) td {
+		margin-bottom: 0px;
+	}
+
+	/* Other - "Save Changes" table :( */
+	body#profile4Page form[action^="profile4.php"] table#formTable table#formTable,
+	body#profile4Page form[action^="profile4.php"] table#formTable table#formTable tr,
+	body#profile4Page form[action^="profile4.php"] table#formTable table#formTable tbody,
+	body#profile4Page form[action^="profile4.php"] table#formTable table#formTable td {
+		width: 100%;
+		display: block;
+		text-align: center;
+	}
+
+	/* Other - "Products and Service List" area */
+	body#profile4Page form[action^="profile4.php"] table#formTable tr:nth-of-type(2) input {
+		width: 100%;
+	}
+}
+@media only screen and (min-width: 768px)
+{
+	/* Show the active tab in a different color */
+	body#profile1Page form[action="profile1.php"] a.linkTabForm,
+	body#profile2Page form[action="profile2.php"] a.linkTabForm,
+	body#profile3Page form[action="profile3.php"] a.linkTabForm,
+	body#profile4Page form[action="profile4.php"] a.linkTabForm {
+		color: #3f6caf !important;
+		font-weight: bold;
+		cursor: default !important;
+	}
+
+	/* Contact Information - Profile Area */
+	body#profile1Page form[action^="profile1.php"] table.profile {
+		width: auto;
+	}
+
+	/* Contact Information - Profile Label Areas */
+	body#profile1Page form[action^="profile1.php"] table.profile tr td:nth-of-type(1) {
+		line-height: 4;
+		padding-right: 10px;
+	}
+
+	/* Contact Information - Submit Button */
+	body#profile1Page form[action^="profile1.php"] table.profile tr:nth-of-type(25) td {
+		padding-bottom: 10px;
+	}
+
+	/* Contact Information - Submit Button */
+	body#profile1Page form[action^="profile1.php"] table.profile tr:nth-of-type(26) td {
+		text-align: left;
+		padding: 50px 0px 0px 0px;
+	}
+
+	/* Spare Details - Member Name Row */
+	body#profile3Page #bodyCenter h1 + table#menuTabs + div + br + br + table.profile tr td {
+		padding-bottom: 20px;
+		padding-top: 10px;
+	}
+
+	/* Spare Details - "Can Spare As" row */
+	body#profile3Page form[action^="profile3.php"] > table.profile > tbody > tr:nth-of-type(3) > td {
+		padding-bottom: 20px;
+	}
+
+	/* Spare Details - "Can Spare As" Checkboxes */
+	body#profile3Page form[action^="profile3.php"] > table.profile > tbody > tr:nth-of-type(3) > td input[type="checkbox"] {
+		margin-left: 20px;
+	}
+	body#profile3Page form[action^="profile3.php"] > table.profile > tbody > tr:nth-of-type(3) > td input[type="checkbox"]:nth-of-type(1) {
+		margin-left: 0px;
+	}
+
+	/* Spare Details - "Leagues I Can Spare In" Area Rows */
+	body#profile3Page form[action^="profile3.php"] table.profile tr:nth-of-type(4) td table.profile td {
+		padding-bottom: 10px;
+		padding-right: 20px;
+	}
+
+	/* Spare Details - "Save Changes" button */
+	body#profile3Page form[action^="profile3.php"] table.profile tr:nth-of-type(5) td {
+		padding-top: 30px;
+		text-align: left;
+	}
+
+	/* Spare Details - "Leagues I Can Spare In" Last Row */
+	body#profile3Page form[action^="profile3.php"] table.profile table.profile tr:nth-of-type(5) td {
+		padding: 0px 0px 20px 0px;
+		text-align: left;
+		background-color: #FFF;
+	}
+
+	/* Membership Info - Member Name Label */
+	body#profile2Page #bodyCenter h1 + table#menuTabs + div + br + br + table tr td:nth-of-type(1) {
+		padding-right: 95px;
+		margin-bottom: 10px;
+	}
+
+	/* Membership Info - Member Name Row */
+	body#profile2Page #bodyCenter h1 + table#menuTabs + div + br + br + table tr td {
+		width: 50%;
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+
+	/* Membership Information - Table Left Side */
+	body#profile2Page form[action^="profile2.php"] table.profile tr td:nth-of-type(1) {
+		padding-right: 10px;
+	}
+
+	/* Membership Information - Username */
+	body#profile2Page form[action^="profile2.php"] table.profile tr:nth-of-type(1) br {
+		display: none;
+	}
+
+	/* Membership Info - Save Changes Row */
+	body#profile2Page form[action^="profile2.php"] table.profile tr:nth-of-type(16) td {
+		padding-top: 50px;
+	}
+
+	/* Membership Info - Main Area */
+	body#profile1Page form[action^="profile2.php"] table.profile {
+		padding-bottom: 20px;
+	}
+
+	body#profile2Page form[action^="profile2.php"] table.profile tr:nth-of-type(1) td input[name="username"],
+	body#profile2Page form[action^="profile2.php"] table.profile tr:nth-of-type(2) td input[name="password"],
+	body#profile2Page form[action^="profile2.php"] table.profile tr:nth-of-type(3) td input[name="password2"] {
+		margin-right: 10px;
+	}
+
+	/* Membership Information - Add Padding to each vvisible row */
+	body#profile2Page form[action^="profile2.php"] table.profile tr:nth-of-type(1) td,
+	body#profile2Page form[action^="profile2.php"] table.profile tr:nth-of-type(2) td,
+	body#profile2Page form[action^="profile2.php"] table.profile tr:nth-of-type(3) td,
+	body#profile2Page form[action^="profile2.php"] table.profile tr:nth-of-type(5) td,
+	body#profile2Page form[action^="profile2.php"] table.profile tr:nth-of-type(6) td,
+	body#profile2Page form[action^="profile2.php"] table.profile tr:nth-of-type(7) td,
+	body#profile2Page form[action^="profile2.php"] table.profile tr:nth-of-type(8) td,
+	body#profile2Page form[action^="profile2.php"] table.profile tr:nth-of-type(11) td,
+	body#profile2Page form[action^="profile2.php"] table.profile tr:nth-of-type(14) td {
+		padding-bottom: 10px;
+	}
+}
+/* Style the Modify Your Profile page - END */
+
+/* Style the League Roster Page - START */
+body#leagueRosterPage > div#mainBody > div#bodyCenter > br {
+	display: none;
+}
+/* Style the League Roster Page - END */
+
+/* Style the Request a Spare page - START */
+
+/* Line after the Save Request Button */
+body#requestPlayerPage div#bodyCenter h1 + form[action="requestPlayer.php"] + hr {
+	display: none;
+}
+
+/* Note after the request has been saved */
+body#requestPlayerPage div#bodyCenter h1 + form[action="requestPlayer.php"] + hr + p {
+	/* text-align: center; */
+	padding: 50px 30px 50px 30px;
+	font-weight: normal !important;
+	font-size: 16px;
+	background-color: #585858;
+	color: #fff;
+	margin: 0;
+}
+
+/* Request Form Area */
+body#requestPlayerPage div#bodyCenter h1 + form[action="requestPlayer.php"] {
+	padding: 50px 30px 50px 50px;
+}
+
+/* Remove random break tags */
+form[action="requestPlayer.php"] div:nth-child(4) > br {
+	display: none;
+}
+
+@media only screen and (max-width: 767px)
+{
+	/* Request Form Area */
+	body#requestPlayerPage div#bodyCenter h1 + form[action="requestPlayer.php"] {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	/* Player Dropdown Area */
+	body#requestPlayerPage div#bodyCenter h1 + form[action="requestPlayer.php"] > div:nth-child(1) {
+		margin-bottom: 20px;
+	}
+
+	/* Player Dropdown */
+	body#requestPlayerPage div#bodyCenter h1 + form[action="requestPlayer.php"] > div:nth-child(1) select {
+		width: 100%;
+	}
+
+	/* Gender Dropdown Area */
+	body#requestPlayerPage div#bodyCenter h1 + form[action="requestPlayer.php"] > div:nth-child(2) {
+		margin-bottom: 20px;
+	}
+
+	/* Gender Dropdown */
+	body#requestPlayerPage div#bodyCenter h1 + form[action="requestPlayer.php"] > div:nth-child(2) select {
+		width: 100%;
+	}
+
+	/* Position Dropdown Area */
+	body#requestPlayerPage div#bodyCenter h1 + form[action="requestPlayer.php"] > div:nth-child(3) {
+		margin-bottom: 20px;
+	}
+
+	/* Position Dropdown */
+	body#requestPlayerPage div#bodyCenter h1 + form[action="requestPlayer.php"] > div:nth-child(3) select:not([name="leagueID"]) {
+		width: 100%;
+	}
+
+	/* 'For a' Section */
+	body#requestPlayerPage div#bodyCenter h1 + form[action="requestPlayer.php"] div#leagues > div {
+		float: none !important;
+		margin-bottom: 0px;
+	}
+
+	/* Start Date & Time Area */
+	body#requestPlayerPage div#bodyCenter h1 + form[action="requestPlayer.php"] > div:nth-child(4) {
+		margin-bottom: 20px;
+	}
+
+	/* Game/Event/Bonspiel Dropdown */
+	body#requestPlayerPage div#bodyCenter h1 + form[action="requestPlayer.php"] #needType {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	/* Event and League Drop down */
+	body#requestPlayerPage div#bodyCenter h1 + form[action="requestPlayer.php"] select[name="leagueID"],
+	body#requestPlayerPage div#bodyCenter h1 + form[action="requestPlayer.php"] select[name="eventID"] {
+		width: 100%;
+	}
+
+	/* Start Date & Time Area */
+	body#requestPlayerPage div#bodyCenter h1 + form[action="requestPlayer.php"] > div:nth-child(5) {
+		margin-bottom: 20px;
+	}
+
+	/* Start Label */
+	body#requestPlayerPage div#bodyCenter h1 + form[action="requestPlayer.php"] > div:nth-child(5) span {
+		display: block;
+	}
+
+	/* Start Date Field */
+	body#requestPlayerPage div#bodyCenter h1 + form[action="requestPlayer.php"] > div:nth-child(5) #startDate {
+		display: block;
+		margin-left: 0;
+		width: calc(100% - 30px);
+		margin-bottom: 10px;
+	}
+
+	/* End Date & Time Area */
+	body#requestPlayerPage div#bodyCenter h1 + form[action="requestPlayer.php"] > div:nth-child(6) {
+		margin-bottom: 20px;
+	}
+
+	/* End Date Field */
+	body#requestPlayerPage div#bodyCenter h1 + form[action="requestPlayer.php"] > div:nth-child(6) #endDate {
+		display: block;
+		margin-left: 0;
+		width: calc(100% - 30px);
+		margin-bottom: 10px;
+	}
+
+	/* End Label */
+	body#requestPlayerPage div#bodyCenter h1 + form[action="requestPlayer.php"] > div:nth-child(6) span {
+		display: block;
+	}
+
+	/* Notes Textarea Area */
+	body#requestPlayerPage div#bodyCenter h1 + form[action="requestPlayer.php"] > div:nth-child(7) {
+		margin-bottom: 20px;
+	}
+
+	/* Notes Textarea */
+	body#requestPlayerPage div#bodyCenter h1 + form[action="requestPlayer.php"] #spareNotes {
+		width: calc(100% - 30px) !important;
+	}
+
+	/* Email requests Checkbox Area */
+	body#requestPlayerPage div#bodyCenter h1 + form[action="requestPlayer.php"] > div:nth-child(8) {
+		margin-bottom: 20px;
+	}
+
+	/* Save Request Button */
+	body#requestPlayerPage div#bodyCenter h1 + form[action="requestPlayer.php"] #saveRequest {
+		width: 100%;
+	}
+}
+@media only screen and (min-width: 768px)
+{
+	/* Player Dropdown Area */
+	body#requestPlayerPage div#bodyCenter h1 + form[action="requestPlayer.php"] > div:nth-child(1) {
+		margin-bottom: 20px;
+	}
+
+	/* Gender Dropdown Area */
+	body#requestPlayerPage div#bodyCenter h1 + form[action="requestPlayer.php"] > div:nth-child(2) {
+		margin-bottom: 20px;
+	}
+
+	/* Position Area */
+	body#requestPlayerPage div#bodyCenter h1 + form[action="requestPlayer.php"] > div:nth-child(3):not(#leagues):not(#events) {
+		margin-bottom: 20px;
+	}
+
+	/* Game/Event/Bonspiel Area */
+	body#requestPlayerPage div#bodyCenter h1 + form[action="requestPlayer.php"] > div:nth-child(4):not(#leagues):not(#events) {
+		float: left;
+		/* margin-bottom: 20px; */
+		width: 96%;
+	}
+
+	/* 'For a' in the Game/Event/Bonspiel Area */
+	body#requestPlayerPage div#bodyCenter h1 + form[action="requestPlayer.php"] > div:nth-child(4) > span {
+		display: block;
+		float: left;
+		margin-top: 10px;
+		margin-right: 5px;
+	}
+
+	body#requestPlayerPage div#bodyCenter h1 + form[action="requestPlayer.php"] > div:nth-child(4)::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+
+	/* Game/Event/Bonspiel Dropdown */
+	body#requestPlayerPage div#bodyCenter h1 + form[action="requestPlayer.php"] #needType {
+		float: left;
+		margin-right: 20px;
+	}
+
+	/* Event and League Drop down */
+	body#requestPlayerPage div#bodyCenter h1 + form[action="requestPlayer.php"] #leagues,
+	body#requestPlayerPage div#bodyCenter h1 + form[action="requestPlayer.php"] #events {
+		margin-bottom: 0px;
+		float: left;
+	}
+
+	body#requestPlayerPage div#bodyCenter h1 + form[action="requestPlayer.php"] #leagues > div {
+		float: none !important;
+	}
+
+	/* Start Date & Time Area */
+	body#requestPlayerPage div#bodyCenter h1 + form[action="requestPlayer.php"] > div:nth-child(5) {
+		margin-top: 80px;
+		margin-bottom: 20px;
+	}
+
+	/* Start Date Field */
+	body#requestPlayerPage div#bodyCenter h1 + form[action="requestPlayer.php"] > div:nth-child(5) #startDate {
+		margin-right: 10px;
+	}
+
+	/* End Date & Time Area */
+	body#requestPlayerPage div#bodyCenter h1 + form[action="requestPlayer.php"] > div:nth-child(6) {
+		margin-bottom: 20px;
+	}
+
+	/* End Date Field */
+	body#requestPlayerPage div#bodyCenter h1 + form[action="requestPlayer.php"] > div:nth-child(6) #endDate {
+		margin-right: 10px;
+	}
+
+	/* End Date & Time Area */
+	body#requestPlayerPage div#bodyCenter h1 + form[action="requestPlayer.php"] > div:nth-child(6) {
+		margin-bottom: 20px;
+	}
+
+	/* Notes Textarea */
+	body#requestPlayerPage div#bodyCenter h1 + form[action="requestPlayer.php"] #spareNotes {
+		width: 70% !important;
+		padding-right: 25px;
+		margin-bottom: 20px;
+		max-width: 600px;
+		margin-top: 10px;
+	}
+
+	/* Save Request Button */
+	body#requestPlayerPage div#bodyCenter h1 + form[action="requestPlayer.php"] #saveRequest {
+		margin-top: 15px;
+	}
+}
+/* Style the Request a Spare page - END */
+
+/* Style the Login page - START */
+body#loginPage form[action^="login.php"] {
+	margin-top: 50px;
+	color: #888;
+}
+
+body#loginPage form[action^="login.php"] table tr:nth-child(1) td {
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+
+body#loginPage form[action^="login.php"] table tr:nth-child(1) td label,
+body#loginPage form[action^="login.php"] table tr:nth-child(2) td label {
+	display: block;
+	text-align: right;
+	padding-right: 15px;
+}
+
+body#loginPage form[action^="login.php"] table tr:nth-child(2) td {
+	padding-bottom: 15px;
+}
+
+body#loginPage form[action^="login.php"] table tr:nth-child(3) td {
+	padding-bottom: 15px;
+}
+
+body#loginPage form[action^="login.php"] table tr:nth-child(3) input[type=checkbox] {
+	margin-top: 1px;
+	position: absolute;
+	margin-left: 3px;
+}
+
+body#loginPage form[action^="login.php"] table tr:nth-child(3) label {
+	margin-top: 5px;
+	position: absolute;
+	margin-left: 33px;
+}
+
+body#loginPage form[action^="login.php"] table tr:nth-child(4) td {
+	text-align: center;
+}
+
+body#loginPage form[action^="login.php"] table tr:nth-child(4) input[name=submit] {
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	float: none;
+}
+
+body#loginPage input[type="text"],
+body#loginPage input[type="password"] {
+	padding: 15px;
+	font-size: 14px;
+	line-height: 24px;
+	color: #888;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	color: #495057;
+	background-color: #f8f8f8;
+	border-color: #ececee;
+}
+
+body#loginPage input[type="text"]:focus,
+body#loginPage input[type="password"]:focus {
+	background-color: #ffffff;
+	box-shadow: 0 0 3px #3f6caf !important;
+	border: 1px solid #3f6caf !important;
+}
+
+body#loginPage input[type="submit"][id="loginnow"] {
+	max-width: 100%;
+	border: 1px solid #3f6caf;
+	background-color: #3f6caf !important;
+	color: #FFF !important;
+	border-radius: 3px;
+	padding: 12px 30px;
+	font-size: 12px;
+	line-height: 24px;
+	font-weight: 600;
+	letter-spacing: .06em;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+body#loginPage input[type="submit"][id="loginnow"]:hover {
+	background-color: #585858 !important;
+	color: #ffffff !important;
+}
+
+body#loginPage input[type="checkbox"] {
+	width: 25px;
+	height: 25px;
+	outline: none;
+	cursor: pointer;
+	box-sizing: border-box;
+}
+
+body#loginPage div#mainBody > p > a {
+	color: #3f6caf !important;
+}
+
+body#loginPage form[action^="login.php"] + p + p + p {
+    display: none;
+}
+
+body#loginPage form[action^="login.php"] + p + p {
+	padding-bottom: 30px;
+}
+
+/* Style the error message */
+body#loginPage h1 + div.ui-widget {
+	width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+@media only screen and (max-width: 767px) {
+	body#loginPage form[action^="login.php"] {
+		margin-top: 25px;
+	}
+}
+@media only screen and (min-width: 768px) {
+	body#loginPage input[type="text"][id="username"],
+	body#loginPage input[type="password"][id="password"] {
+		width: 250px;
+	}
+
+    body#loginPage form[action^="login.php"] + p + p {
+    	padding-bottom: 50px;
+    }
+}
+/* Style the Login page - END */
+
+/* Style the pages with tabs - START */
+@media only screen and (min-width: 768px)
+{
+	#menuTabs {
+		display: inline-table !important;
+		float: none; !important
+	}
+
+	#menuTabs td:nth-child(1), #menuTabs td:nth-child(3), #menuTabs td:nth-child(4), #menuTabs td:nth-child(6), #menuTabs td:nth-child(7), #menuTabs td:nth-child(9), #menuTabs td:nth-child(10), #menuTabs td:nth-child(12), #menuTabs td:nth-child(13), #menuTabs td:nth-child(15), #menuTabs td:nth-child(16), #menuTabs td:nth-child(18), #menuTabs td:nth-child(19), #menuTabs td:nth-child(21), #menuTabs td:nth-child(22), #menuTabs td:nth-child(24), #menuTabs td:nth-child(25), #menuTabs td:nth-child(27), #menuTabs td:nth-child(28), #menuTabs td:nth-child(30), #menuTabs td:nth-child(31) {
+		display: none;
+	}
+
+	td.tabMenu {
+		background-image: none;
+		border-bottom: solid 1px #C0C0C0;
+		font-weight: bold;
+		font-size: 14px;
+		color: #3f6caf;
+		text-transform: uppercase;
+	}
+
+	td.tabMenu a {
+		font-weight: normal;
+		font-size: 14px;
+		display: block;
+		padding: 20px 0 20px 0;
+		color: #888 !important;
+	}
+
+	td.tabMenu a:hover {
+		color: #3f6caf !important;
+	}
+
+
+	#menuTabs td:nth-last-child(3) {
+		border-right: none;
+	}
+
+	#menuDropdown + p,
+	#menuDropdown + p + br,
+	#menuDropdown + p + br + br,
+	#menuDropdown + p + br + br + br,
+	#menuDropdown + p + br + br + br + br {
+		display: none;
+	}
+}
+/* Style the pages with tabs - END */
+
+/* Style various tables - START */
+@media only screen and (min-width: 768px) {
+	body#myTeamsPage table[class^=league],
+	body#mySchedulePage table.sched,
+	body#leagueSchedulePage table.sched,
+	body#leagueStandingsPage table.sched,
+	body#teamStandingsPage table.stats,
+	body#teamStandingsPage table.round,
+	body#leagueRosterPage table.dir,
+	table.fullSched,
+	table.team,
+	table.scores {
+		width: calc(100% - 60px);
+		padding: 30px 30px 30px 30px;
+	}
+
+/*
+	body#directoryPage table.dir {
+		width: calc(100% - 60px);
+		margin: 20px 30px 0px 30px;
+	}
+*/
+
+	body#profile2Page table.register th,
+	body#myTeamsPage table[class^=league] th,
+	body#mySchedulePage table.sched th,
+	body#leagueSchedulePage table.sched th,
+	body#leagueStandingsPage table.sched th,
+	body#teamStandingsPage table.stats th,
+	body#teamStandingsPage table.round th,
+	body#leagueRosterPage table.dir th,
+    body#directoryPage div.dataTables_scrollHeadInner table th,
+	table.fullSched th,
+	table.team th,
+	table.scores th {
+		margin: 0;
+		padding: 15px;
+		font-size: 16px;
+		color: #888;
+		background: #ffffff;
+	}
+
+	body#profile2Page table.register tr td:last-of-type,
+	body#myTeamsPage table[class^=league] tr td:last-of-type,
+	body#mySchedulePage table.sched tr td:last-of-type,
+	body#leagueSchedulePage table.sched tr td:last-of-type,
+	body#leagueStandingsPage table.sched tr td:last-of-type,
+	body#teamStandingsPage table.stats tr td:last-of-type,
+	body#teamStandingsPage table.round tr td:last-of-type,
+	body#leagueRosterPage table.dir tr td:last-of-type,
+	body#directoryPage table#dirTable tr td:last-of-type,
+	table.fullSched tr td:last-of-type,
+	table.team tr td:last-of-type,
+	table.scores tr td:last-of-type {
+		border-right: solid 1px #ececee;
+	}
+
+	body#profile2Page table.register tr:last-of-type td,
+	body#myTeamsPage table[class^=league] tr:last-of-type td,
+	body#mySchedulePage table.sched tr:last-of-type td,
+	body#leagueSchedulePage table.sched tr:last-of-type td,
+	body#leagueStandingsPage table.sched tr:last-of-type td,
+	body#teamStandingsPage table.stats tr:last-of-type td,
+	body#teamStandingsPage table.round tr:last-of-type td,
+	body#leagueRosterPage table.dir tr:last-of-type td,
+	body#directoryPage table#dirTable tr:last-of-type td,
+	table.fullSched tr:last-of-type td,
+	table.team tr:last-of-type td,
+	table.scores tr:last-of-type td {
+		border-bottom: solid 1px #ececee;
+	}
+
+	body#profile2Page table.register tr td,
+	body#myTeamsPage table[class^=league] tr td,
+	body#mySchedulePage table.sched tr td,
+	body#leagueSchedulePage table.sched tr td,
+	body#leagueStandingsPage table.sched tr td,
+	body#teamStandingsPage table.stats tr td,
+	body#teamStandingsPage table.round tr td,
+	body#leagueRosterPage table.dir tr td,
+	body#directoryPage table#dirTable tr td,
+	table.fullSched tr td,
+	table.team tr td,
+	table.scores tr td {
+		color: #888;
+		font-size: 16px;
+		margin: 0;
+		padding: 10px;
+		border-top: solid 1px #ececee;
+		border-left: solid 1px #ececee;
+		border-right: none;
+		word-break: break-word;
+	}
+
+	body#profile2Page table.register tr td span {
+		color: #888 !important;
+		background: none !important;
+		text-decoration: none !important;
+	}
+}
+
+body#profile2Page table.register > tbody > tr:nth-child(even),
+body#myTeamsPage table[class^=league] > tbody > tr:nth-child(even),
+body#mySchedulePage table.sched > tbody > tr:nth-child(even),
+body#leagueSchedulePage table.sched > tbody > tr:nth-child(even),
+body#leagueStandingsPage table.sched > tbody > tr:nth-child(even),
+body#teamStandingsPage table.stats > tbody > tr:nth-child(even),
+body#teamStandingsPage table.round > tbody > tr:nth-child(even),
+body#directoryPage table#dirTable > tbody > tr:nth-child(even),
+table.fullSched > tbody > tr:nth-child(even),
+table.team > tbody > tr:nth-child(even),
+table.scores > tbody > tr:nth-child(even) {
+	background-color: #fff !important;
+}
+
+body#profile2Page table.register > tbody > tr:nth-child(odd),
+body#myTeamsPage table[class^=league] > tbody > tr:nth-child(odd),
+body#mySchedulePage table.sched > tbody > tr:nth-child(odd),
+body#leagueSchedulePage table.sched > tbody > tr:nth-child(odd),
+body#leagueStandingsPage table.sched > tbody > tr:nth-child(odd),
+body#teamStandingsPage table.stats > tbody > tr:nth-child(odd),
+body#teamStandingsPage table.round > tbody > tr:nth-child(odd),
+body#directoryPage table#dirTable > tbody > tr:nth-child(odd),
+table.fullSched > tbody > tr:nth-child(odd),
+table.team > tbody > tr:nth-child(odd),
+table.scores > tbody > tr:nth-child(odd) {
+	background-color: #f8f8f8 !important;
+}
+
+body#leagueStandingsPage h2,
+body#teamStandingsPage h2,
+body#leagueSchedulePage h2 {
+	font-weight: 100;
+	margin: 0;
+	padding: 20px 0 0 0;
+	color: #151515;
+	background: none;
+	text-align: center;
+	font-size: 32px;
+}
+
+body#teamStandingsPage > div#mainBody > div#bodyCenter {
+	padding-bottom: 50px !important;
+}
+
+body#leagueStandingsPage > div#mainBody > div#bodyCenter > br,
+body#leagueSchedulePage > div#mainBody > div#bodyCenter > br,
+body#leagueRosterPage > div#mainBody > div#bodyCenter > br {
+	display: none;
+}
+
+body#leagueStandingsPage > div#mainBody > div#bodyCenter > p,
+body#leagueSchedulePage > div#mainBody > div#bodyCenter > p,
+body#leagueRosterPage > div#mainBody > div#bodyCenter > p {
+	padding: 50px 30px 50px 30px;
+	text-align: center;
+}
+
+body#leagueSchedulePage > div#mainBody > div#bodyCenter > div > form[action="leagueSchedule.php"] {
+	padding: 50px 30px 0px 30px;
+}
+
+body#leagueSchedulePage > div#mainBody > div#bodyCenter > div > form[action="leagueSchedule.php"] > select {
+	margin-right: 10px;
+	padding: 17px;
+}
+
+body#directoryPage div#dirTable_wrapper div.fg-toolbar {
+	background: #3f6caf;
+	color: #ffffff;
+	border: none;
+	padding: 10px;
+}
+
+body#directoryPage div.dataTables_scrollHeadInner table,
+body#directoryPage div.dataTables_scrollHeadInner table th {
+	border: none;
+}
+
+body#directoryPage div.dataTables_scrollHeadInner table th {
+	padding-right: 25px;
+	cursor: pointer;
+}
+
+body#directoryPage table#dirTable tr td {
+	background: none;
+}
+
+body#directoryPage div.dataTables_scrollHead {
+	background: none;
+}
+
+body#directoryPage div.dataTables_paginate a {
+	background: none;
+	font-weight: bold;
+	color: #ffffff !important;
+}
+
+@media only screen and (max-width: 767px) {
+	body#directoryPage table.dir {
+		width: 100% !important;
+	}
+
+	body#directoryPage table.dir tbody {
+		display: block;
+	}
+
+	body#mySchedulePage table.sched,
+	body#leagueSchedulePage table.sched,
+	body#leagueStandingsPage table.sched,
+	body#teamStandingsPage table.stats,
+	body#teamStandingsPage table.round,
+	body#directoryPage table#dirTable,
+	table.fullSched,
+	table.team {
+		padding: 30px 10px 30px 10px;
+	}
+}
+/* Style various tables - END */
+
+/* Style the Enter My Scores Page - START */
+body#enterMyScoresPage > div#mainBody > div#bodyCenter > p {
+	text-align: center;
+	padding: 30px 30px 30px 30px;
+	font-size: 16px;
+}
+
+body#enterMyScoresPage table.scores input[type="submit"] {
+    white-space: nowrap;
+}
+/* Style the Enter My Scores Page - END */
+
+/* Style the Find a Spare page - START */
+div#bodyCenter h1 + div form[action="requestPlayer.php"],
+div#bodyCenter h1 + div form[action="requestPlayer.php"] + br {
+	display: none;
+}
+
+/* Search Area Container */
+body#spareListPage > div#mainBody > div#bodyCenter > h1 + div + div {
+	padding: 50px 30px 30px 30px;
+}
+
+/* Search Area */
+body#spareListPage form[action="spareList.php"] {
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
+	border: solid 1px #ececee;
+	padding: 20px 60px 30px 60px;
+}
+
+/* No Search Results Message */
+body#spareListPage > div#mainBody > div#bodyCenter > h1 + div + div + br + p {
+	padding: 0px 30px 50px 30px;
+	font-size: 16px;
+}
+
+@media only screen and (min-width: 768px)
+{
+	/* Gender Row */
+	body#spareListPage form[action="spareList.php"] p:nth-of-type(1) {
+		margin-bottom: 30px;
+	}
+
+	/* Gender Row Label */
+	body#spareListPage form[action="spareList.php"] p:nth-of-type(1) span {
+		margin-right: 10px;
+	}
+
+	/* League Row */
+	body#spareListPage form[action="spareList.php"] p:nth-of-type(2) {
+		margin-bottom: 30px;
+	}
+
+	/* League Row Label */
+	body#spareListPage form[action="spareList.php"] p:nth-of-type(2) span {
+		margin-right: 10px;
+	}
+
+	/* Position Row */
+	body#spareListPage form[action="spareList.php"] p:nth-of-type(3) {
+		margin-bottom: 30px;
+	}
+
+	/* Position Checkboxes Label */
+	body#spareListPage form[action="spareList.php"] p:nth-of-type(3) > span {
+		padding-right: 10px;
+	}
+
+	/* Position Checkboxes */
+	body#spareListPage form[action="spareList.php"] p:nth-child(3) input[type="checkbox"] {
+		margin-left: 20px;
+		margin-right: 5px;
+	}
+	body#spareListPage form[action="spareList.php"] p:nth-child(3) input[type="checkbox"]:nth-of-type(1) {
+		margin-left: 0px;
+	}
+
+	/* Search Results */
+	body#spareListPage > div#mainBody > div#bodyCenter > table th {
+		margin: 0;
+		padding: 15px;
+		font-size: 16px;
+		color: #888;
+	}
+	body#spareListPage > div#mainBody > div#bodyCenter > table tr td:last-of-type {
+		border-right: solid 1px #ececee;
+	}
+	body#spareListPage > div#mainBody > div#bodyCenter > table tr:last-of-type td {
+		border-bottom: solid 1px #ececee;
+	}
+	body#spareListPage > div#mainBody > div#bodyCenter > table tr td {
+		color: #888;
+		font-size: 16px;
+		margin: 0;
+		padding: 10px;
+		border-top: solid 1px #ececee;
+		border-left: solid 1px #ececee;
+		border-right: none;
+		word-break: break-word;
+	}
+	body#spareListPage > div#mainBody > div#bodyCenter > table > tbody > tr:nth-child(even) {
+		background-color: #fff !important;
+	}
+	body#spareListPage > div#mainBody > div#bodyCenter > table > tbody > tr:nth-child(odd) {
+		background-color: #f8f8f8 !important;
+	}
+	body#spareListPage > div#mainBody > div#bodyCenter > table {
+		width: calc(100% - 60px);
+		padding: 30px 30px 50px 30px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	/* Search Area Container */
+	body#spareListPage > div#mainBody > div#bodyCenter > h1 + div + div {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	/* Search Area */
+	body#spareListPage form[action="spareList.php"] {
+		padding-left: 10px;
+		padding-right: 10px;
+		display: block;
+	}
+
+	/* Gender Section */
+	body#spareListPage form[action="spareList.php"] p:nth-of-type(1) {
+		padding: 10px 0px 10px 0px;
+		margin: 0;
+		text-align: left;
+	}
+
+	/* Gender Label */
+	body#spareListPage form[action="spareList.php"] p:nth-of-type(1) span {
+		display: block;
+		margin-bottom: 10px;
+	}
+
+	/* Gender Dropdown */
+	body#spareListPage form[action="spareList.php"] p:nth-of-type(1) select {
+		margin-bottom: 20px;
+		width: 100%;
+	}
+
+	/* League Section */
+	body#spareListPage form[action="spareList.php"] p:nth-of-type(2) {
+		padding: 0 0 30px 0;
+		margin: 0;
+		text-align: left;
+	}
+
+	/* League Label */
+	body#spareListPage form[action="spareList.php"] p:nth-of-type(2) span {
+		display: block;
+		margin-bottom: 10px;
+	}
+
+	/* League Dropdown */
+	body#spareListPage form[action="spareList.php"] p:nth-of-type(2) select {
+		width: 100%;
+	}
+
+	/* Position Section */
+	body#spareListPage form[action="spareList.php"] p:nth-of-type(3) {
+		padding: 0;
+		margin: 0px 0px 30px 0px;
+		text-align: left;
+	}
+
+	/* Position Label */
+	body#spareListPage form[action="spareList.php"] p:nth-of-type(3) span {
+		display: block;
+		margin-bottom: 10px;
+	}
+
+	/* Position Checkboxes */
+	body#spareListPage form[action="spareList.php"] p:nth-of-type(3) input[type="checkbox"]:nth-of-type(2),
+	body#spareListPage form[action="spareList.php"] p:nth-of-type(3) input[type="checkbox"]:nth-of-type(3),
+	body#spareListPage form[action="spareList.php"] p:nth-of-type(3) input[type="checkbox"]:nth-of-type(4) {
+		margin-left: 15px;
+	}
+
+	/* Apply Filters Button */
+	body#spareListPage form[action="spareList.php"] input[type="submit"] {
+		width: 100%;
+	}
+
+	/* Search Results */
+	body#spareListPage > div#mainBody > div#bodyCenter > table {
+		padding: 30px 10px 30px 10px;
+	}
+}
+/* Style the Find a Spare page - END */
+
+/* Style the Volunteer Pages - START */
+body#memberVolunteer1Page form[action^="memberVolunteer1.php"] {
+	padding: 0px 50px 50px 50px;
+}
+
+body#memberVolunteer1Page > div#mainBody > div#bodyCenter > table.volunteer,
+body#memberVolunteer2Page > div#mainBody > div#bodyCenter > table.volunteer,
+body#memberVolunteer3Page > div#mainBody > div#bodyCenter > table.volunteer {
+	padding: 50px 50px 0 50px;
+}
+
+body#memberVolunteer1Page > div#mainBody > div#bodyCenter > table.volunteer + p {
+	padding: 20px 50px 0 50px;
+	text-align: left !important;
+}
+
+body#memberVolunteer1Page > div#mainBody > div#bodyCenter > table.volunteer + p > span {
+	font-family: Geneva, Arial, Helvetica, sans-serif !important;
+}
+
+body#memberVolunteer1Page form[action^="memberVolunteer1.php"] table.volunteer tr td {
+	text-align: left !important;
+	padding-bottom: 10px;
+}
+
+body#memberVolunteer1Page form[action^="memberVolunteer1.php"] table.volunteer tr:nth-last-of-type(1) td {
+	padding: 30px 0 0 0 !important;
+}
+
+body#memberVolunteer1Page form[action^="memberVolunteer1.php"] table.volunteer tr:nth-last-of-type(1) td br {
+	display: none;
+}
+
+body#memberVolunteer1Page form[action^="memberVolunteer1.php"] h2 {
+	padding-top: 20px;
+}
+
+body#memberVolunteer2Page > div#mainBody > div#bodyCenter > table.volunteer + h3,
+body#memberVolunteer3Page > div#mainBody > div#bodyCenter > table.volunteer + h3 {
+	padding: 20px 50px 30px 50px;
+}
+
+body#memberVolunteer2Page form[action^="memberVolunteer2.php"] + br + p {
+	padding: 0px 50px 50px 50px;
+}
+
+body#memberVolunteer2Page form[action^="memberVolunteer2.php"] {
+	padding: 0 50px 0 50px;
+}
+
+body#memberVolunteer2Page table.logList tr td:nth-of-type(4) div.actions form {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+body#memberVolunteer2Page form[action^="memberVolunteer2.php"] table.volunteer tr th {
+	padding-right: 10px;
+}
+
+body#memberVolunteer2Page form[action^="memberVolunteer2.php"] table.volunteer tr td {
+	padding-bottom: 10px;
+}
+
+body#memberVolunteer2Page form[action^="memberVolunteer2.php"] textarea[name="volunteerDesc"] {
+	margin-top: 5px;
+}
+
+body#memberVolunteer2Page form[action^="memberVolunteer2.php"] select[name="leagueID"],
+body#memberVolunteer2Page form[action^="memberVolunteer2.php"] select[name="eventID"] {
+	margin-bottom: 5px;
+}
+
+body#memberVolunteer2Page form[action^="memberVolunteer2.php"] select[name="committeeID"] {
+	margin-bottom: 10px;
+}
+
+body#memberVolunteer2Page form[action^="memberVolunteer2.php"] table.volunteer tr:nth-last-of-type(1) td {
+	padding: 30px 0 0 0;
+}
+
+body#memberVolunteer2Page form[action^="memberVolunteer2.php"][name="edit"] {
+	padding: 20px 50px 50px 50px;
+}
+
+body#memberVolunteer2Page form[action^="memberVolunteer2.php"][name="edit"] input[name="return2list"] {
+	background: none !important;
+	border: none !important;
+	text-transform: initial !important;
+	color: #3f6caf  !important;
+	font-weight: normal !important;
+	text-decoration: underline;
+	padding: 0;
+}
+
+body#memberVolunteer2Page table.logList,
+body#memberVolunteer3Page table.organizationVolunteerList {
+	padding: 50px 50px 50px 50px;
+	width: 100%;
+	border-spacing: 0px;
+}
+
+body#memberVolunteer2Page table.logList th,
+body#memberVolunteer3Page table.organizationVolunteerList th {
+	margin: 0;
+	padding: 15px;
+	font-size: 16px;
+	color: #888;
+}
+
+body#memberVolunteer2Page table.logList tr td:last-of-type,
+body#memberVolunteer3Page table.organizationVolunteerList tr td:last-of-type {
+	border-right: solid 1px #ececee;
+}
+
+body#memberVolunteer2Page table.logList tr:last-of-type td,
+body#memberVolunteer3Page table.organizationVolunteerList tr:last-of-type td {
+	border-bottom: solid 1px #ececee;
+}
+
+body#memberVolunteer2Page table.logList tr td,
+body#memberVolunteer3Page table.organizationVolunteerList tr td {
+	color: #888;
+	font-size: 16px;
+	margin: 0;
+	padding: 10px;
+	border-top: solid 1px #ececee;
+	border-left: solid 1px #ececee;
+	border-right: none;
+	word-break: break-word;
+}
+
+body#memberVolunteer2Page table.logList > tbody > tr:nth-child(even),
+body#memberVolunteer3Page table.organizationVolunteerList > tbody > tr:nth-child(even) {
+	background-color: #fff !important;
+}
+
+body#memberVolunteer2Page table.logList > tbody > tr:nth-child(odd),
+body#memberVolunteer3Page table.organizationVolunteerList > tbody > tr:nth-child(odd) {
+	background-color: #f8f8f8 !important;
+}
+
+body#memberVolunteer3Page table.volunteer + h3 + p,
+body#memberVolunteer3Page table.volunteer + h3 + div.ui-widget + br + p {
+	padding: 0 50px 50px 50px;
+}
+
+body#memberVolunteer3Page form[name="selectType"] {
+	padding: 0 50px 50px 50px;
+}
+
+body#memberVolunteer3Page form[name="return"] {
+	padding: 50px 50px 50px 50px;
+}
+
+body#memberVolunteer3Page table.volunteer + h3 + div.ui-widget {
+	padding: 0 50px 50px 50px;
+}
+
+@media only screen and (max-width: 767px) {
+	body#memberVolunteer1Page form[action^="memberVolunteer1.php"] {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	body#memberVolunteer1Page > div#mainBody > div#bodyCenter > table.volunteer,
+	body#memberVolunteer2Page > div#mainBody > div#bodyCenter > table.volunteer,
+	body#memberVolunteer3Page > div#mainBody > div#bodyCenter > table.volunteer {
+		padding-left: 10px;
+		padding-right: 10px;
+		display: table;
+	}
+
+	body#memberVolunteer1Page > div#mainBody > div#bodyCenter > table.volunteer + p {
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-bottom: 0px;
+	}
+
+	body#memberVolunteer1Page > div#mainBody > div#bodyCenter br + table.volunteer tr,
+	body#memberVolunteer2Page > div#mainBody > div#bodyCenter br + table.volunteer tr,
+	body#memberVolunteer3Page > div#mainBody > div#bodyCenter br + table.volunteer tr {
+		display: table-row;
+	}
+
+	body#memberVolunteer1Page > div#mainBody > div#bodyCenter br + table.volunteer td,
+	body#memberVolunteer2Page > div#mainBody > div#bodyCenter br + table.volunteer td,
+	body#memberVolunteer3Page > div#mainBody > div#bodyCenter br + table.volunteer td {
+		display: table-cell;
+		padding-right: 10px;
+	}
+
+	body#memberVolunteer1Page form[action^="memberVolunteer1.php"] table.volunteer tr:nth-last-of-type(1) td input[type="submit"] {
+		width: 100%;
+	}
+
+	body#memberVolunteer2Page > div#mainBody > div#bodyCenter > table.volunteer + h3,
+	body#memberVolunteer3Page > div#mainBody > div#bodyCenter > table.volunteer + h3 {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	body#memberVolunteer2Page form[action^="memberVolunteer2.php"] + br + p {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	body#memberVolunteer2Page form[action^="memberVolunteer2.php"] {
+		padding-left: 10px;
+		padding-right: 10px;
+		text-align: center;
+	}
+
+	body#memberVolunteer2Page table.logList,
+	body#memberVolunteer3Page table.organizationVolunteerList {
+		padding-left: 10px;
+		padding-right: 10px;
+		width: calc(100% - 20px);
+		border-collapse: collapse;
+	}
+
+	body#memberVolunteer2Page form[action^="memberVolunteer2.php"] table.volunteer tr td {
+		text-align: left;
+	}
+
+	body#memberVolunteer2Page form[action^="memberVolunteer2.php"] table.volunteer tr:nth-of-type(1) select {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	body#memberVolunteer2Page form[action^="memberVolunteer2.php"] table.volunteer tr:nth-of-type(2) th {
+		padding-top: 20px;
+	}
+
+	body#memberVolunteer2Page form[action^="memberVolunteer2.php"] table.volunteer tr:nth-of-type(3) th {
+		padding-top: 20px;
+	}
+
+	body#memberVolunteer2Page form[action^="memberVolunteer2.php"] table.volunteer tr:nth-of-type(4) th {
+		padding-top: 20px;
+	}
+
+	body#memberVolunteer2Page form[action^="memberVolunteer2.php"] table.volunteer tr:nth-of-type(4) select {
+		margin-bottom: 10px;
+		width: 100%;
+		max-width: 100%;
+	}
+
+	body#memberVolunteer2Page form[action^="memberVolunteer2.php"] table.volunteer tr:nth-of-type(4) textarea {
+		width: calc(100% - 35px);
+	}
+
+	body#memberVolunteer2Page form[action^="memberVolunteer2.php"] table.volunteer tr:nth-of-type(5) select {
+		width: 100%;
+		max-width: 100%;
+		margin-bottom: 10px;
+	}
+
+	body#memberVolunteer2Page form[action^="memberVolunteer2.php"] table.volunteer tr:nth-last-of-type(1) td {
+		text-align: center !important;
+		padding: 10px 0px 0px 0px;
+	}
+
+	body#memberVolunteer2Page form[action^="memberVolunteer2.php"] table.volunteer tr:nth-last-of-type(1) td input[type="submit"] {
+		width: 100%;
+	}
+
+	body#memberVolunteer2Page table.logList tr td {
+		padding-left: 110px;
+		border: solid 1px #ececee !important;
+	}
+
+	body#memberVolunteer3Page table.volunteer + h3 + p,
+	body#memberVolunteer3Page table.volunteer + h3 + div.ui-widget + br + p {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	body#memberVolunteer3Page form[name="selectType"] {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	body#memberVolunteer3Page form[name="selectType"] input[name="organization"] {
+		width: 100%;
+	}
+
+	body#memberVolunteer3Page form[name="return"] {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	body#memberVolunteer3Page table.organizationVolunteerList tr td {
+		padding-left: 130px;
+		border: solid 1px #ececee !important;
+		min-height: 30px;
+	}
+
+	body#memberVolunteer3Page table.organizationVolunteerList tr td:before {
+		width: 110px;
+	}
+
+	body#memberVolunteer3Page table.volunteer + h3 + div.ui-widget {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+/* Style the Volunteer Page - END */
+
+/* Style images inside of content sections - START */
+.contentImageLeft {
+	padding: 0px 10px 0px 10px;
+}
+.contentImageCenter {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	padding: 0px 10px 0px 10px;
+}
+/* Style images inside of content sections - END */
+
+/* Style the Event Page - START */
+body#eventPage form[name="form1"] input[type="submit"] {
+	border: 1px solid #e0e0e2;
+	background-color: #ffffff !important;
+	color: #585858 !important;
+	border-radius: 3px;
+	padding: 12px 30px;
+	font-size: 12px;
+	line-height: 24px;
+	font-weight: 600;
+	letter-spacing: .06em;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+}
+
+body#eventPage form[name="form1"] input[type="submit"]:hover {
+	border: 1px solid #585858;
+	background-color: #585858 !important;
+	color: #fff !important;
+}
+
+body#eventPage div#mainBody div#bodyCenter > br {
+	display: none;
+}
+
+body#eventPage div#mainBody div#bodyCenter > br + table {
+	padding: 30px 0 50px 0;
+	background-color: #3f6caf;
+	width: 100%;
+	text-align: center;
+}
+
+body#eventPage .rowElement.eventRegisterArea {
+	padding-bottom: 0px !important;
+}
+/* Style the Event Page - END */
+
+/* Style the Event Register Page - START */
+body#eventRegisterPage div#bodyCenter > h1 + p {
+	padding: 30px 30px 30px 30px;
+	text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+	body#eventPage iframe,
+	body#event2Page iframe,
+	body#event3Page iframe,
+	body#event4Page iframe,
+	body#event5Page iframe,
+	body#event6Page iframe {
+		width: calc(100% - 40px);
+		height: 500px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		border: 1px solid #CCC;
+	}
+}
+@media only screen and (max-width: 767px) {
+	body#eventPage iframe,
+	body#event2Page iframe,
+	body#event3Page iframe,
+	body#event4Page iframe,
+	body#event5Page iframe,
+	body#event6Page iframe {
+		width: calc(100% - 40px);
+		height: 500px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		border: 1px solid #CCC;
+	}
+}
+/* Style the Event Register Page - END */
+
+/* Member Registration Closed Page - START */
+body#signupClosedPage > div#mainBody > div#bodyCenter > p {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+body#signupClosedPage > div#mainBody > div#bodyCenter > p:nth-of-type(1) {
+	padding-top: 30px;
+}
+
+body#signupClosedPage > div#mainBody > div#bodyCenter > p:last-of-type {
+	padding-bottom: 30px;
+}
+/* Member Registration Closed Page - END */
+
+/* Style the Registration Page - START */
+body#renewStopPage div#mainBody div#bodyCenter h2 {
+	text-align: center;
+	padding: 50px 30px 10px 30px;
+	text-transform: uppercase;
+}
+
+body#renewPage div#mainBody div#bodyCenter > h1 + h2,
+body#renewPage div#mainBody div#bodyCenter > h1 + h2 + h3 {
+	text-align: center;
+}
+
+body#renewStopPage div#mainBody div#bodyCenter h2 + p {
+	text-align: center;
+	padding: 0px 30px 50px 30px;
+}
+
+form[action="previewSignup.php"] fieldset > table table > tbody > tr.leagues > td:last-of-type {
+    padding: 30px 0px 30px 10px;
+}
+
+form[action="previewSignup.php"] fieldset > table table > tbody > tr.leagues > td:nth-child(2) {
+    padding-top: 30px;
+}
+
+form[action="previewSignup.php"] fieldset > table table > tbody select[name^="memberfee"] {
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+	/* Reset Form and Validate Buttons Section */
+	body#renewPage table.likeParagraph,
+	body#renewPage table.likeParagraph td.likeParagraph {
+		width: 100%;
+	}
+
+	/* Reset Form button */
+	body#renewPage table.likeParagraph td.likeParagraph:nth-child(1) input[name="reset"] {
+		padding: 10px;
+		font-size: 14px;
+		width: 100%;
+	}
+
+	/* Validate Registration and Caclculate Fee button */
+	body#renewPage table.likeParagraph td.likeParagraph:nth-child(2) input[name="validate"] {
+		padding: 10px;
+		font-size: 14px;
+		width: 100%;
+	}
+
+	/* Contact Details Section */
+	body#renewPage fieldset table.contacts {
+		width: 100%;
+		font-size: 14px;
+	}
+
+	/* Contact Details Header */
+	body#renewPage fieldset table.contacts h3 {
+		margin: 0px 0px 10px 0px;
+	}
+
+	/* Contact Details Tbody */
+	body#renewPage fieldset table.contacts tbody {
+		display: block;
+	}
+
+	/* Contact Details Rows */
+	body#renewPage fieldset table.contacts td {
+		width: 100%;
+	}
+
+	/* Contact Details - First Name */
+	body#renewPage fieldset table.contacts input[name="firstName"] {
+		width: 93%;
+		margin-bottom: 10px;
+	}
+
+	/* Contact Details - Middle Name */
+	body#renewPage fieldset table.contacts input[name="middleName"] {
+		width: 93%;
+		margin-bottom: 10px;
+	}
+
+	/* Contact Details - Last Name */
+	body#renewPage fieldset table.contacts input[name="lastName"] {
+		width: 93%;
+		margin-bottom: 10px;
+	}
+
+	/* Contact Details - Gender */
+	body#renewPage fieldset table.contacts select[name="gender"] {
+		width: 99%;
+		margin-bottom: 10px;
+	}
+
+	/* Contact Details - Address Line 1 */
+	body#renewPage fieldset table.contacts input[name="address1"] {
+		width: 93%;
+		margin-bottom: 5px;
+	}
+
+	/* Contact Details - Address Line 2 */
+	body#renewPage fieldset table.contacts input[name="address2"] {
+		width: 93%;
+		margin-bottom: 10px;
+	}
+
+	/* Contact Details - City */
+	body#renewPage fieldset table.contacts input[name="city"] {
+		width: 93%;
+		margin-bottom: 10px;
+	}
+
+	/* Contact Details - Province/State */
+	body#renewPage fieldset table.contacts input[name="province"] {
+		width: 93%;
+		margin-bottom: 10px;
+	}
+
+	/* Contact Details - Postal/Zip Code */
+	body#renewPage fieldset table.contacts input[name="postalCode"] {
+		width: 93%;
+		margin-bottom: 10px;
+	}
+
+	/* Contact Details - Country */
+	body#renewPage fieldset table.contacts input[name="country"] {
+		width: 93%;
+		margin-bottom: 10px;
+	}
+
+	/* Contact Details - Home Phone */
+	body#renewPage fieldset table.contacts input[name="homePhone"] {
+		width: 93%;
+		margin-bottom: 10px;
+	}
+
+	/* Contact Details - Mobile Phone */
+	body#renewPage fieldset table.contacts input[name="cellPhone"] {
+		width: 93%;
+		margin-bottom: 10px;
+	}
+
+	/* Contact Details - Work Phone */
+	body#renewPage fieldset table.contacts input[name="officePhone"] {
+		width: 93%;
+		margin-bottom: 10px;
+	}
+
+	/* Contact Details - Ext */
+	body#renewPage fieldset table.contacts input[name="extension"] {
+		width: 93%;
+		margin-bottom: 10px;
+	}
+
+	/* Contact Details - Member Since */
+	body#renewPage fieldset table.contacts select[name="memberSince"] {
+		width: 99%;
+		margin-bottom: 10px;
+	}
+
+	/* Contact Details - Years Curling Experience */
+	body#renewPage fieldset table.contacts input[name="experience"] {
+		width: 93%;
+		margin-bottom: 10px;
+	}
+
+	/* Contact Details - Email */
+	body#renewPage fieldset table.contacts input[name="email"] {
+		width: 93%;
+		margin-bottom: 10px;
+	}
+
+	/* Contact Details - Re-enter email */
+	body#renewPage fieldset table.contacts input[name="email2"] {
+		width: 93%;
+		margin-bottom: 10px;
+	}
+
+	/* Contact Details - Emergency Contact Name */
+	body#renewPage fieldset table.contacts input[name="emergName"] {
+		width: 93%;
+		margin-bottom: 10px;
+	}
+
+	/* Contact Details - Emergency Contact Phone Number */
+	body#renewPage fieldset table.contacts input[name="emergPhone"] {
+		width: 93%;
+		margin-bottom: 10px;
+	}
+
+	/* Date of Birth - Month */
+	body#renewPage fieldset table.contacts select[name="bmonth"] {
+		width: 46%;
+		margin-bottom: 10px;
+	}
+
+	/* Date of Birth - Day */
+	body#renewPage fieldset table.contacts select[name="bday"] {
+		width: 25%;
+		margin-bottom: 10px;
+	}
+
+	/* Date of Birth - Year */
+	body#renewPage fieldset table.contacts select[name="byear"] {
+		width: 25%;
+		margin-bottom: 10px;
+	}
+
+	/* Consent to Release Information Section */
+	body#renewPage fieldset + br + fieldset table {
+		width: 100%;
+		font-size: 14px;
+	}
+
+	/* Content to Release Header */
+	body#renewPage fieldset + br + fieldset table h3 {
+		margin: 0px;
+	}
+
+	/* League Registration Input Fields */
+	body#renewPage fieldset tr.leagues input[type="text"] {
+		width: 90%;
+		margin-bottom: 10px;
+	}
+
+	/* League Registration Input Field Containers */
+	body#renewPage fieldset tr.leagues div {
+		width: 100%;
+	}
+
+	/* League Registration House Membership */
+	body#renewPage fieldset tr.specials select {
+		width: 90%;
+		margin-bottom: 10px;
+	}
+
+	/* Checkbox Lists */
+	body#renewPage fieldset ul {
+		margin: 0px 0px 0px 0px !important;
+	}
+}
+/* style the Registration Page - END */
+
+/* Style the Page Footer - START */
+footer.pageFooter {
+	background-color: #f8f8f8;
+	/* margin-top: 50px; */
+}
+
+.pageFooter h3 {
+	background: none;
+	font-size: 20px;
+	font-weight: 100;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+}
+
+div.pageFooter {
+	background-color: #f8f8f8;
+	color: #999;
+	padding-bottom: 20px;
+	padding-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1200px;
+}
+
+.pageFooter p {
+	line-height: 1.7;
+	font-size: 14px;
+}
+
+.pageFooter p a,
+.pageFooter p a:visited {
+	color: #3f6caf !important;
+}
+
+.pageFooter div.pageFooter {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.pageFooter div.pageFooterSection.footerAboutUs {
+	width: calc(28% - 20px);
+	max-width: calc(30% - 20px);
+	margin-right: 20px;
+}
+
+.pageFooter div.pageFooterSection.footerSocialMedia {
+	width: calc(13%);
+	max-width: calc(13%);
+	margin-right: 20px;
+}
+
+.pageFooter div.pageFooterSection.footerContactUs {
+	width: calc(25%);
+	max-width: calc(25%);
+	margin-right: 20px;
+}
+
+.pageFooter div.pageFooterSection.footerLegal {
+	width: calc(25% - 20px);
+	max-width: calc(25% - 20px);
+}
+
+div#pageBottom2,
+div#pageBottom3 + div {
+	display: none;
+}
+
+@media only screen and (max-width: 767px) {
+	footer.pageFooter {
+		/* margin-top: 20px; */
+	}
+
+	.pageFooter div.pageFooter {
+		padding: 10px 15px 0px 15px !important;
+		width: calc(100% - 30px);
+	}
+
+	.pageFooter div.pageFooterSection,
+	.pageFooter div.pageFooterSection.footerSocialMedia,
+	.pageFooter div.pageFooterSection.footerLegal {
+		flex: none;
+		max-width: 100% !important;
+		width: 100% !important;
+		padding-top: 20px !important;
+		margin: 0px !important;
+	}
+}
+/* Style the Page Footer - END */
+
+/* Style the Admin Redirect Page - START */
+body#adminRedirectPage div#bodyCenter p {
+	text-align: center;
+	margin-left: 20px;
+	margin-right: 20px;
+	color: #888;
+	padding-bottom: 10px;
+}
+
+body#adminRedirectPage div#bodyCenter > p:nth-of-type(1) {
+	padding-top: 50px !important;
+}
+
+body#adminRedirectPage div#bodyCenter > p:last-of-type {
+	padding-bottom: 50px !important;
+}
+
+/* Style the Admin Redirect Page - END */
+
+/* Style the HTML Template Page - START */
+div.htmlTemplateSection p {
+	font-size: 16px;
+}
+
+div.htmlTemplateSection h6.templateHeading {
+	padding: 20px 0px 20px 20px;
+	background-color: #efefee;
+}
+/* Style the HTML Template Page - END */
+
+/* Style the row element "Heading" - START */
+.rowElement.elementHeading li {
+	font-size: 16px;
+	line-height: 1.7;
+}
+
+.rowElement.elementHeading p {
+	font-size: 16px;
+	padding: 0px 0px 0px 0px;
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 1.7;
+	color: #888;
+}
+
+.rowElement.elementHeading h3 {
+	padding-bottom: 20px !important;
+}
+
+@media only screen and (max-width: 767px) {
+	.rowElement.elementHeading h3 {
+		margin: 0px 10px 0 10px !important;
+	}
+
+	.rowElement.elementHeading.alignLeft p {
+		padding-left: 10px !important;
+		padding-right: 10px !important;
+	}
+}
+/* Style the row element "Heading" - END */
+
+/* Style the row element "History" - START */
+.rowElement.elementHistory p {
+	padding: 0;
+	margin: 0;
+}
+
+.rowElement.elementHistory h3 {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.rowElement.elementHistory .historyWrapper {
+	font-size: 16px;
+    line-height: 2;
+    color: #999;
+}
+
+.rowElement.elementHistory {
+	flex: 0 0 100%;
+}
+
+.rowElement.elementHistory .historyWrapper {
+    max-width: calc(50% - 46px - 46px);
+    position: relative;
+    min-height: 1px;
+}
+
+.rowElement.elementHistory .historyWrapper::after {
+    top: 4px;
+}
+
+.rowElement.elementHistory .historyWrapper::before {
+    position: absolute;
+    top: 0;
+    bottom: -4px;
+    left: 0;
+    border-left: 1px solid #ececee;
+    content: "";
+    display: inline-block;
+}
+
+.rowElement.elementHistory .historyWrapper::after {
+    top: 4px;
+}
+
+.rowElement.elementHistory .historyWrapper::after {
+    position: absolute;
+    top: 0;
+    left: -9px;
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    background: #3f6caf;
+    border-radius: 50%;
+    content: '';
+}
+
+.rowElement.elementHistory .historyWrapper p {
+	font-size: 16px;
+	line-height: 2;
+}
+
+.rowElement.elementHistory .historySubTitle {
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+	font-style: italic;
+	color: #3f6caf;
+	display: block;
+	line-height: 18px !important;
+}
+
+.rowElement.elementHistory .historyTitle {
+	padding: 0;
+	margin: 0;
+	font-size: 24px !important;
+	color: #585858;
+}
+
+@media only screen and (min-width: 768px) {
+	.rowElement.elementHistory .historyWrapper:nth-child(even) {
+		margin-left: auto;
+		text-align: left;
+		padding-left: 46px;
+		margin-right: 0;
+		padding-bottom: 50px;
+		padding-right: 46px;
+	}
+
+	.rowElement.elementHistory .historyWrapper:nth-child(odd) {
+		margin-right: auto;
+		text-align: right;
+		padding-right: 46px;
+		padding-bottom: 75px;
+		margin-left: 0;
+		padding-left: 46px;
+	}
+
+	.rowElement.elementHistory .historyWrapper:last-of-type {
+		padding-bottom: 0px !important;
+	}
+
+	.rowElement.elementHistory .historyWrapper:nth-child(odd) h4 {
+		text-align: right;
+	}
+
+	.rowElement.elementHistory .historyWrapper:nth-child(even) h4 {
+		text-align: left;
+	}
+
+	.rowElement.elementHistory .historyWrapper:nth-child(odd)::before {
+		left: auto;
+		right: -1px;
+	}
+
+	.rowElement.elementHistory .historyWrapper:nth-child(odd)::after {
+		left: auto;
+		right: -10px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.rowElement.elementHistory h3 {
+		text-align: left !important;
+	}
+
+	.rowElement.elementHistory .historyWrapper {
+		max-width: calc(100% - 80px);
+		position: relative;
+		min-height: 1px;
+		padding-bottom: 40px;
+		padding-right: 10px;
+		padding-left: 30px;
+		margin-left: 10px;
+	}
+
+	.rowElement.elementHistory .historyWrapper:last-of-type {
+		padding-bottom: 0px !important;
+	}
+}
+/* Style the row element "History" - END */
+
+/* Style the row element "Single Topic" - START */
+.rowElement.elementSingleTopic,
+.rowElement.elementSingleTopic.multiRow > .singleTopicRow {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	padding-bottom: 30px;
+	padding-top: 10px;
+}
+
+.rowElement.elementSingleTopic.multiRow > .singleTopicRow:nth-of-type(even) {
+	background-color: #EBF0F7;
+}
+
+.rowElement.elementSingleTopic.multiRow {
+	display: block;
+	flex-wrap: unset;
+	justify-content: unset;
+}
+
+.rowElement.elementSingleTopic.colorMedium {
+	flex-direction: column;
+}
+
+.rowElement.elementSingleTopic.colorMedium > div.singleTopicHeading,
+.rowElement.elementSingleTopic.colorMedium > div.singleTopicContent {
+	width: 100%;
+	min-width: 100%;
+	padding: 10px 20px 0px 0px;
+}
+
+.rowElement.elementSingleTopic > div.singleTopicHeading,
+.rowElement.elementSingleTopic.multiRow .singleTopicRow > div.singleTopicHeading {
+	flex: 0 0 30%;
+	max-width: calc(30% - 40px);
+	min-width: 200px;
+	padding: 10px 20px 0px 0px;
+}
+
+.rowElement.elementSingleTopic > div.singleTopicContent,
+.rowElement.elementSingleTopic.multiRow .singleTopicRow > div.singleTopicContent {
+	flex: 0 0 76%;
+	max-width: calc(70% - 40px);
+	min-width: 200px;
+}
+
+.rowElement.elementSingleTopic > div > p,
+.rowElement.elementSingleTopic.multiRow .singleTopicRow > div > p {
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+.rowElement.elementSingleTopic > div li,
+.rowElement.elementSingleTopic.multiRow .singleTopicRow > div li {
+	line-height: 1.5;
+	font-size: 16px;
+}
+
+.rowElement.elementSingleTopic h5 {
+	padding: 10px 0 20px 0;
+}
+
+.rowElement.elementSingleTopic .singleTopicContact {
+	display: flex;
+	font-size: 16px;
+	flex-wrap: wrap;
+	padding-bottom: 20px;
+	border-bottom: solid 1px #ccc;
+	margin-bottom: 30px;
+}
+
+.rowElement.elementSingleTopic .singleTopicContact:nth-last-of-type(1) {
+	padding-bottom: 0px;
+	border-bottom: none;
+	margin-bottom: 0px;
+}
+
+.rowElement.elementSingleTopic .singleTopicContact .singleTopicContactPerson,
+.rowElement.elementSingleTopic .singleTopicContact .singleTopicContactPhone,
+.rowElement.elementSingleTopic .singleTopicContact .singleTopicContactEmail {
+	padding: 6px 20px 0 45px;
+	height: 30px;
+	background-repeat: no-repeat;
+	width: 150px;
+	margin: 10px;
+}
+
+.rowElement.elementSingleTopic .singleTopicContact .singleTopicContactPerson {
+	background-image: url(/data/127/images/Volunteering/contact-person.png);
+}
+
+.rowElement.elementSingleTopic .singleTopicContact .singleTopicContactPhone {
+	background-image: url(/data/127/images/Volunteering/contact-phone.png);
+}
+
+.rowElement.elementSingleTopic .singleTopicContact .singleTopicContactEmail {
+	background-image: url(/data/127/images/Volunteering/contact-email.png);
+}
+
+@media only screen and (max-width: 767px) {
+	.rowElement.elementSingleTopic {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.rowElement.elementSingleTopic > div,
+	.rowElement.elementSingleTopic.multiRow .singleTopicRow > div {
+		flex: none !important;
+		width: calc(100% - 20px) !important;
+		max-width: calc(100% - 20px) !important;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.rowElement.elementSingleTopic .singleTopicContact {
+		flex: none !important;
+		width: 100% !important;
+		max-width: 100% !important;
+	}
+
+	.rowElement.elementSingleTopic > div.singleTopicHeading,
+	.rowElement.elementSingleTopic.multiRow .singleTopicRow > div.singleTopicHeading {
+		padding: 0 !important;
+	}
+
+	.rowElement.elementSingleTopic.multiRow .singleTopicRow {
+		padding-top: 30px;
+	}
+}
+/* Style the row element "Single Topic" - END */
+
+/* Style the row element "Two Topics" - START  */
+.rowElement.elementTwoTopics {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	flex-direction: row;
+}
+
+.rowElement.elementTwoTopics > div {
+	flex: 0 0 50%;
+	max-width: calc(50% - 80px);
+	min-width: 200px;
+}
+
+.rowElement.elementTwoTopics p {
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+@media only screen and (max-width: 767px) {
+	.rowElement.elementTwoTopics {
+		padding-left: 20px !important;
+		padding-right: 20px !important;
+	}
+
+	.rowElement.elementTwoTopics > div {
+		flex: none !important;
+		width: 100% !important;
+		max-width: 100% !important;
+		margin-bottom: 50px;
+	}
+
+	.rowElement.elementTwoTopics > div:last-of-type {
+		margin-bottom: 0px;
+	}
+}
+/* Style the row element "Two Topics" - END */
+
+/* Style the row element "People" - START */
+.rowElement.elementPeople {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.rowElement.elementPeople .peoplePerson {
+	flex: 0 0 25%;
+	max-width: calc(25% - 40px);
+	min-width: 150px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 30px;
+	min-width: 200px;
+}
+
+.rowElement.elementPeople .peoplePerson .personPicture {
+	min-width: 100px;
+}
+
+.rowElement.elementPeople .peoplePerson .personName {
+	font-size: 20px;
+	text-align: center;
+	padding: 15px 0 0 0;
+	margin: 0;
+}
+
+.rowElement.elementPeople .peoplePerson .personRole {
+	font-size: 14px;
+    line-height: 1.7;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    color: #af503f;
+}
+
+.rowElement.elementPeople .peoplePerson .personTerm {
+	font-size: 12px;
+    line-height: 1.7;
+    font-style: italic;
+    text-align: center;
+    padding: 0;
+    margin: 8px 0 0 0;
+    text-transform: uppercase;
+    color: #888;
+}
+
+@media only screen and (max-width: 767px) {
+	.rowElement.elementPeople .peoplePerson {
+		flex: 0 0 50%;
+		max-width: calc(50% - 40px);
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-bottom: 20px;
+	}
+}
+/* Style the row element "People" - END */
+
+/* Style the row element "Picture Links" - START */
+.rowElement .linkArea .linkImageList {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+.rowElement .linkArea .linkImageList .linkImage {
+	flex: 0 0 50%;
+	max-width: calc(50% - 20px);
+	padding: 10px 20px 0 0;
+}
+
+.rowElement .linkArea .linkImageList .linkList {
+	flex: 0 0 50%;
+	max-width: calc(50%);
+}
+
+.rowElement .linkArea ul {
+	padding: 0;
+	list-style: none;
+}
+
+.rowElement .linkArea ul li {
+	padding-bottom: 15px;
+	font-size: 14px;
+}
+
+@media only screen and (max-width: 767px) {
+	.rowElement .linkArea h5 {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	.rowElement .linkArea .linkImageList .linkImage,
+	.rowElement .linkArea .linkImageList .linkList {
+		flex: none;
+		width: calc(100%);
+		max-width: calc(100%);
+	}
+
+	.rowElement .linkArea .linkImageList .linkImage img {
+		margin-bottom: 20px;
+	}
+
+	.rowElement .linkArea .linkImageList .linkList {
+		text-align: center;
+	}
+}
+/* Style the row element "Picture Links" - END */
+
+/* Style the row element "Category" - START */
+.rowElement.elementCategory {
+	align-items: stretch;
+}
+
+.rowElement.elementCategory > div {
+	max-width: calc(33.3% - 100px);
+	margin-bottom: 20px;
+}
+
+.rowElement.elementCategory > .categoryWrapper {
+	padding: 40px !important;
+	border: 1px solid #ececee;
+	text-align: center;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+.rowElement.elementCategory > .categoryWrapper .categoryType {
+	padding-bottom: 30px;
+	border-bottom: 1px solid #ececee;
+}
+
+.rowElement.elementCategory > .categoryWrapper .categoryType h4 {
+	text-align: center;
+	color: #3f6caf;
+	font-weight: bold;
+}
+
+.rowElement.elementCategory > .categoryWrapper .categoryTypeSubTitle {
+	margin-bottom: 15px;
+	font-size: 18px;
+}
+
+.rowElement.elementCategory > .categoryWrapper .categoryDescription {
+	margin-top: 30px;
+}
+
+.rowElement.elementCategory > .categoryWrapper p {
+	margin: 0;
+	padding: 0;
+	color: #888;
+	font-size: 16px;
+	line-height: 1.7;
+}
+
+@media only screen and (max-width: 767px) {
+	.rowElement.elementCategory > div {
+		flex: none !important;
+		width: calc(100% - 110px) !important;
+		max-width: calc(100% - 110px) !important;
+		margin: 20px 20px 20px 20px !important;
+	}
+}
+/* Style the row element "Category" - END */
+
+/* Style the row element "Blurb" - START */
+.rowElement.elementBlurb {
+	align-items: stretch;
+	justify-content: flex-start;
+}
+
+.rowElement.elementBlurb .blurbWrapper {
+	margin-bottom: 40px;
+	min-width: 300px !important;
+	max-width: calc(33.3% - 40px) !important;
+}
+
+.rowElement.elementBlurb .blurbWrapper p {
+	font-size: 16px;
+	line-height: 1.5;
+	color: #888;
+}
+
+.rowElement.elementBlurb.shapeCircle .blurbWrapper .blurbIcon {
+	border: solid 1px #af503f;
+	padding: 19px 30px 19px 30px;
+	font-size: 40px;
+	border-radius: 50%;
+	margin-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: fit-content;
+	color: #af503f;
+	text-transform: uppercase;
+}
+
+.rowElement.elementBlurb.shapeSquare .blurbWrapper .blurbIcon {
+	font-size: 40px;
+	max-width: fit-content;
+	text-transform: uppercase;
+	margin: 0 0 20px 0;
+	padding: 10px 20px 10px 20px;
+	color: #fff;
+	background-color: #3f6caf;
+}
+
+.rowElement .blurbWrapper a.redesign {
+	margin-top: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+	.rowElement.elementBlurb > div {
+		flex: none !important;
+		width: calc(100% - 20px) !important;
+		max-width: calc(100% - 20px) !important;
+	}
+
+	.rowElement.elementBlurb .blurbWrapper:last-of-type {
+		margin-bottom: 0px;
+	}
+}
+/* Style the row element "Blurb" - END */
+
+/* Style the row element "Picture Topics" - START */
+.rowElement.elementPictureTopics {
+	padding: 20px 20px 0px 20px !important;
+	justify-content: space-between;
+}
+
+.rowElement.elementPictureTopics .pictureTopicWrapper {
+	max-width: calc(33.3% - 20px) !important;
+	margin-bottom: 20px;
+	padding: 0!important;
+}
+
+.rowElement.elementPictureTopics h5 {
+	margin: 20px 0 20px 0 !important;
+}
+
+.rowElement.elementPictureTopics a {
+	text-decoration: none;
+	color: #151515 !important;
+}
+
+.rowElement.elementPictureTopics a:hover {
+	color: #3f6caf !important;
+}
+
+.rowElement.elementPictureTopics p {
+    line-height: 1.7;
+    color: #888;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 767px) {
+	.rowElement.elementPictureTopics {
+		padding: 0px 10px 20px 10px !important;
+	}
+
+	.rowElement.elementPictureTopics .pictureTopicWrapper {
+		flex: none !important;
+		max-width: calc(100% - 20px) !important;
+		width: calc(100% - 20px) !important;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 0px;
+	}
+
+	.rowElement.elementPictureTopics img {
+		margin-left: 0px !important;
+		margin-right: 0px !important;
+		margin-top: 20px !important;
+	}
+}
+/* Style the row element "Picture Topics" - END */
+
+/* Style the row element "Event" - START */
+.rowElement.elementEvent h3 {
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.rowElement.elementEvent .eventDateTime {
+	font-size: 16px;
+	line-height: 1.8;
+	color: #3f6caf;
+	text-align: center;
+}
+
+.rowElement.elementEvent .eventPicText {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	width: 80%;
+	max-width: 700px;
+	padding-bottom: 40px;
+	border-bottom: solid 1px #ececee;
+}
+
+.rowElement.elementEvent .eventPicText img {
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-bottom: 30px;
+}
+
+.rowElement.elementEvent .eventPicText p {
+	color: #888;
+	font-size: 16px;
+	line-height: 1.7;
+}
+
+.rowElement.elementEvent .eventStats {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	max-width: 700px;
+	padding-top: 60px;
+}
+
+.rowElement.elementEvent .eventStats .eventStatWrapper {
+	flex: 0 0 50%;
+	width: calc(50% - 20px);
+	max-width: calc(50% - 20px);
+	margin-right: 40px;
+}
+
+.rowElement.elementEvent .eventStats .eventStatWrapper:last-of-type {
+	margin-right: 0px !important;
+}
+
+.rowElement.elementEvent .eventStats .eventStatWrapper h5 {
+	margin-bottom: 20px;
+}
+
+.rowElement.elementEvent .eventStats .eventStatWrapper ul {
+	padding: 0;
+	margin: 0;
+}
+
+.rowElement.elementEvent .eventStats .eventStatWrapper ul li {
+	list-style: none;
+	line-height: 2.5;
+	font-size: 16px;
+	color: #888;
+}
+
+@media only screen and (max-width: 767px) {
+	.rowElement.elementEvent .eventPicText {
+		width: 100%;
+	}
+
+	.rowElement.elementEvent .eventStats {
+		width: 100%;
+		display: block;
+	}
+
+	.rowElement.elementEvent .eventStats .eventStatWrapper {
+		flex: none !important;
+		width: 100% !important;
+		max-width: 100% !important;
+		text-align: center !important;
+		margin: 0 0 40px!important;
+	}
+
+	.rowElement.elementEvent .eventStats .eventStatWrapper:last-of-type	{
+		margin-bottom: 0px !important;
+	}
+
+	.rowElement.elementEvent .eventStats .eventStatWrapper h5 {
+		text-align: center !important;
+	}
+}
+/* Style the row element "Event" - END */
+
+/* Style the row element "Topic Picture" - START */
+.rowElement.elementTopicPicture {
+	display: flex;
+}
+
+.rowElement.elementTopicPicture.pictureLeft {
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+}
+
+.rowElement.elementTopicPicture.pictureLeft.multiRow {
+	display: block;
+	flex-direction: unset;
+	justify-content: unset;
+}
+
+.rowElement.elementTopicPicture.pictureLeft.multiRow > .topicPicRow {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+	padding-bottom: 40px;
+}
+
+.rowElement.elementTopicPicture.pictureLeft.multiRow > .topicPicRow:nth-last-of-type(1) {
+	padding-bottom: 0px;
+}
+
+.rowElement.elementTopicPicture.pictureLeft.multiRow > .topicPicRow p {
+	padding-bottom: 20px;
+}
+
+.rowElement.elementTopicPicture.pictureLeft.multiRow > p {
+	padding-bottom: 30px;
+}
+
+.rowElement.elementTopicPicture.pictureLeft .topicPicImage {
+	margin-right: 40px;
+}
+
+.rowElement.elementTopicPicture .topicPicInfo {
+	/* flex: 2 0 70%; */
+	width: calc(70% - 40px) !important;
+	max-width: calc(70% - 40px) !important;
+	margin-right: 40px;
+}
+
+.rowElement.elementTopicPicture.pictureLeft .topicPicInfo {
+	margin-right: 0px;
+}
+
+.rowElement.elementTopicPicture .topicPicImage {
+	/* flex: 0 0 30%; */
+	/* max-width: 300px; */
+}
+
+.rowElement.elementTopicPicture li {
+	font-size: 16px;
+	line-height: 1.7;
+}
+
+.rowElement.elementTopicPicture  h3 {
+	margin-bottom: 20px;
+}
+
+.rowElement.elementTopicPicture p {
+	font-size: 16px;
+	padding: 0px 0px 0px 0px;
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 1.7;
+	color: #888;
+}
+
+.rowElement.elementTopicPicture a {
+	margin-top: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+	.rowElement.elementTopicPicture h3 {
+		margin: 0px 0px 0 0px;
+	}
+
+	.rowElement.elementTopicPicture {
+		flex-direction: column-reverse;
+	}
+
+	.rowElement.elementTopicPicture.pictureLeft.multiRow > .topicPicRow {
+		flex: none !important;
+		width: 100% !important;
+		max-width: 100% !important;
+	}
+
+	.rowElement.elementTopicPicture .topicPicInfo {
+		flex: none !important;
+		width: 100% !important;
+		max-width: 100% !important;
+	}
+
+	.rowElement.elementTopicPicture .topicPicImage {
+		flex: none !important;
+		width: 100% !important;
+		margin-bottom: 30px;
+	}
+
+	.rowElement.elementTopicPicture.pictureLeft {
+		flex-direction: column-reverse !important;
+	}
+
+	.rowElement.elementTopicPicture.pictureLeft.multiRow {
+		flex-direction: unset !important;
+	}
+
+	.rowElement.elementTopicPicture.pictureLeft.multiRow .topicPicRow {
+		flex-direction: column-reverse !important;
+	}
+}
+/* Style the row element "Topic Picture" - END */
+
+/* Style a generic table - START */
+body > div#mainBody > div#bodyCenter table.redesign {
+	width: 100%;
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+
+body > div#mainBody > div#bodyCenter table.redesign th {
+	margin: 0;
+	padding: 15px;
+	font-size: 16px;
+	color: #888;
+	text-transform: uppercase;
+}
+
+body > div#mainBody > div#bodyCenter table.redesign tr td:last-of-type {
+	border-right: solid 1px #ececee;
+}
+
+body > div#mainBody > div#bodyCenter table.redesign tr:last-of-type td {
+	border-bottom: solid 1px #ececee;
+}
+
+body > div#mainBody > div#bodyCenter table.redesign tr td {
+	color: #888;
+	font-size: 16px;
+	margin: 0;
+	padding: 10px;
+	border-top: solid 1px #ececee;
+	border-left: solid 1px #ececee;
+	border-right: none;
+	word-break: break-word;
+}
+
+body > div#mainBody > div#bodyCenter table.redesign > tbody > tr:nth-child(even) {
+	background-color: #fff !important;
+}
+
+body > div#mainBody > div#bodyCenter table.redesign > tbody > tr:nth-child(odd) {
+	background-color: #f8f8f8 !important;
+}
+
+@media only screen and (max-width: 767px) {
+	body > div#mainBody > div#bodyCenter table.redesign {
+		overflow-x: scroll;
+		display: block;
+	}
+}
+/* Style a generic table - START */
+
+/* Style the row element "Small Tables" - START */
+.rowElement.elementSmallTables h3 {
+	padding: 0 0 20px 0;
+}
+
+.rowElement.elementSmallTables h4 {
+	padding: 50px 0 30px 0;
+	text-align: center;
+}
+
+.rowElement.elementSmallTables > p {
+	font-size: 16px;
+	padding: 0px 0px 0px 0px;
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 1.7;
+	color: #888;
+}
+
+.rowElement.elementSmallTables .sectionWrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.rowElement.elementSmallTables .sectionWrapper > div.sectionWrapperItem {
+	flex: 0 0 50%;
+	max-width: calc(50% - 40px);
+	min-width: 200px;
+	text-align: center;
+}
+
+.rowElement.elementSmallTables .sectionWrapper .sectionWrapperItem h5 {
+	text-align: center;
+	padding: 0 0 20px 0;
+    color: #3f6caf;
+    font-weight: bold;
+}
+
+.rowElement.elementSmallTables .smallPicture {
+	padding: 0 0 20px 0;
+}
+
+.rowElement.elementSmallTables .sectionWrapper + p {
+	padding: 20px 0 0 0;
+	text-align: center;
+	color: #888;
+	font-size: 16px;
+}
+
+@media only screen and (max-width: 767px) {
+	.rowElement.elementSmallTables .sectionWrapper .sectionWrapperItem h5 {
+		text-align: left;
+	}
+
+	.rowElement.elementSmallTables h4 {
+		padding: 50px 0 0 0;
+		text-align: left;
+	}
+
+	.rowElement.elementSmallTables .sectionWrapper {
+		flex: none !important;
+		width: 100% !important;
+		max-width: 100% !important;
+	}
+
+	.rowElement.elementSmallTables .sectionWrapper > div.sectionWrapperItem {
+		flex: none;
+		padding: 30px 10px 0px 10px;
+		width: calc(100% - 20px);
+		max-width: calc(100% - 20px);
+		text-align: left;
+	}
+
+	.rowElement.elementSmallTables .smallPicture {
+		flex: none !important;
+		width: 100% !important;
+	}
+
+	.rowElement.elementSmallTables table.redesign {
+		display: table !important;
+	}
+}
+/* Style the row element "Small Tables" - END */
+
+/* Style the News Page - START */
+body#newsPage > div#mainBody > div#bodyCenter > a.newsHeadline > p.newsHeadline {
+	padding: 30px 30px 30px 30px;
+	margin: 0;
+    font-size: 20px;
+    color: #333;
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+body#newsPage > div#mainBody > div#bodyCenter > a.newsHeadline + p {
+	margin: 0;
+	padding: 30px 30px 20px 30px;
+	color: #888;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif !important;
+}
+
+body#newsPage > div#mainBody > div#bodyCenter > a.newsHeadline + p + p {
+	margin: 0;
+	padding: 0px 30px 30px 30px;
+	color: #888;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif !important;
+}
+
+body#newsPage > div#mainBody > div#bodyCenter > a.newsHeadline > p.newsHeadline {
+	background-color: #33AA93;
+	color: white;
+}
+
+body#newsPage > div#mainBody > div#bodyCenter > a.newsHeadline + p + p > a.newsLink {
+	display: none;
+}
+
+body#newsPage > div#mainBody > div#bodyCenter > a.newsHeadline:nth-last-of-type(1) + p + p {
+	padding-bottom: 50px;
+	border-bottom: none !important;
+}
+
+/* When no news stories are present */
+body#newsPage > div#mainBody > div#bodyCenter > h1 + p {
+	text-align: center;
+	margin: 0;
+	padding: 50px 30px 50px 30px;
+}
+/* Style the News Page - END */
+
+/* Style the News Story Page - START */
+body#newsStoryPage > div#mainBody > div#bodyCenter > h1 + p {
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif !important;
+    padding: 20px 30px 20px 30px;
+    background-color: #585858;
+    margin: 0;
+}
+
+body#newsStoryPage > div#mainBody > div#bodyCenter > h1 + p > br {
+	content: " ";
+	padding-left: 40px;
+}
+
+body#newsStoryPage > div#mainBody > div#bodyCenter > form[action="news.php"] {
+	padding-bottom: 50px;
+	text-align: center;
+}
+
+@media only screen and (max-width: 479px) {
+	body#newsStoryPage > div#mainBody > div#bodyCenter > h1 + p + * {
+		width: 100% !important;
+	}
+
+	/* Try to fix the newsletter specifically */
+	body#newsStoryPage > div#mainBody > div#bodyCenter > h1 + p + div,
+	body#newsStoryPage > div#mainBody > div#bodyCenter > h1 + p + div > div:nth-of-type(2),
+	body#newsStoryPage > div#mainBody > div#bodyCenter > h1 + p + div > div:nth-of-type(3) {
+		width: calc(100% - 10px) !important;
+		padding-left: 5px !important;
+		padding-right: 5px !important;
+	}
+}
+/* Style the News Story Page - END */
